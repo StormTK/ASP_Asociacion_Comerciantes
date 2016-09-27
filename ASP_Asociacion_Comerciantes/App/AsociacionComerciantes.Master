@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AsociacionComerciantes.master.cs" Inherits="ASP_Asociacion_Comerciantes.App.AsociacionComerciantes" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Asociacion de Comerciantes</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/Principal.css" rel="stylesheet" />
+</head>
+<body>
+    <header><h1>Asociacion de Comerciantes</h1></header>
+    <asp:ContentPlaceHolder ID="Contenido" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
