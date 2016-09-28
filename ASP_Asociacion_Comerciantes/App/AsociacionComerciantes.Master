@@ -8,12 +8,14 @@
     <title>Asociacion de Comerciantes</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="css/Principal.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="imagenes/Icono.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <header><h1>Asociacion de Comerciantes</h1></header>
+    <header><div><img src="imagenes/Logotipo.png" /></div></header>
     <asp:ContentPlaceHolder ID="Contenido" runat="server">
     </asp:ContentPlaceHolder>
-
+    <footer></footer>
 </body>
 </html>

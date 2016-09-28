@@ -58,7 +58,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\css\Principal.css" />
+    <Content Include="App\imagenes\Icono.ico" />
+    <Content Include="App\imagenes\Logotipo.png" />
+    <Content Include="App\css\normalize.css" />
+    <Content Include="App\css\main.css" />
     <Content Include="App\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -90,7 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\account\" />
-    <Folder Include="App\imagenes\" />
     <Folder Include="App\js\" />
   </ItemGroup>
   <PropertyGroup>
