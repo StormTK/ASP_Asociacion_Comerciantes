@@ -13,7 +13,16 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <header><div><img src="imagenes/Logotipo.png" /></div></header>
+    <header>
+        <div id="cabecera"><img src="imagenes/Logotipo.png" /></div>
+        <div id="buscador">
+             <form name="search" method="POST">
+                <input id="barra_search" type="search" name="busqueda" />
+	            <input id="boton_search" type="submit" value="" />
+            </form>
+        </div>
+    </header>
+   
     <asp:ContentPlaceHolder ID="Contenido" runat="server">
     </asp:ContentPlaceHolder>
     <footer></footer>
