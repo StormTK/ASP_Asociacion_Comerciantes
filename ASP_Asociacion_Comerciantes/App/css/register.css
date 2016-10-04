@@ -1,0 +1,49 @@
+﻿section{
+    background: url("../imagenes/fondologin.png") repeat #2B9EB1;
+    padding: 15px 0px; 
+}
+
+.formulario{
+    width: 500px;
+    margin: 0px auto;
+    background: #ECC881;
+    padding: 10px 0px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    color: #1a494c;
+    text-align: center;
+}
+
+.txt_formulario{
+    width: 400px;
+    text-align:center;
+    padding: 7px 0px;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border: 0px solid #000000;
+}
+
+form p{
+    padding: 15px 0px 5px 0px;
+}
+
+.boton{
+     border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border: 2px solid #236939;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    text-align:center;
+    background: #279B96;
+    color: #ffffff;
+}
+
+.boton:hover{
+    font-size: 25px;
+}

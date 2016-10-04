@@ -58,13 +58,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\css\fonts.css" />
+    <Content Include="App\css\register.css" />
+    <Content Include="App\imagenes\fondologin.png" />
     <Content Include="App\imagenes\Icono.ico" />
-    <Content Include="App\imagenes\Logotipo.png" />
     <Content Include="App\css\normalize.css" />
     <Content Include="App\css\main.css" />
-    <Content Include="App\Default.aspx" />
+    <Content Include="App\index.aspx" />
+    <Content Include="App\imagenes\Logotipo.png" />
     <Content Include="App\js\jquery.slides.js" />
     <Content Include="App\js\jquery.slides.min.js" />
+    <Content Include="App\login.aspx" />
+    <Content Include="App\register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -75,12 +80,26 @@
     <Compile Include="App\AsociacionComerciantes.Master.designer.cs">
       <DependentUpon>AsociacionComerciantes.Master</DependentUpon>
     </Compile>
-    <Compile Include="App\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="App\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="App\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -95,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\account\" />
+    <Folder Include="App\css\fonts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

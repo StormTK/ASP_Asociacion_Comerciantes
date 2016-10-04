@@ -11,20 +11,55 @@
     <link rel="icon" type="image/png" href="imagenes/Icono.ico" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <div id="cabecera"><img src="imagenes/Logotipo.png" /></div>
+        <div id="cabecera"><a href="index.aspx" title="Asociacion de Comerciantes S.A."><img src="imagenes/Logotipo.png" /></a></div>
         <div id="buscador">
              <form name="search" method="POST">
-                <input id="barra_search" type="search" name="busqueda" />
-	            <input id="boton_search" type="submit" value="" />
+                <input id="barra_search" type="search" name="busqueda" placeholder="Buscar Producto..."/>
+	            <input class="icon-search" id="boton_search" type="submit" value="&#xe986"/>
             </form>
+        </div>
+        <div id="iniciarsesion">
+            <a href="login.aspx"><span class="icon-enter">Iniciar Sesión</span></a>
+            <span>|</span>
+            <a href="register.aspx"><span class="icon-register">Registrarse</span></a>
         </div>
     </header>
    
     <asp:ContentPlaceHolder ID="Contenido" runat="server">
     </asp:ContentPlaceHolder>
-    <footer></footer>
+    
+    <footer>
+        <div class="inicio">
+            <div class="foo_link">
+                <p>Quienes Somos</p>
+                <ul>
+                    <li><a>Sobre la Asociación</a></li>
+                    <li><a>Socios</a></li>
+                    <li><a>Asociados</a></li>
+                    <li><a>Empleos</a></li>
+                </ul>
+            </div>
+            <div class="foo_link">
+                <p>Politicas y Servicios</p>
+                <ul>
+                    <li><a>Terminos y Condiciones</a></li>
+                    <li><a>Aviso de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="foo_link_fin">
+                <p>Centro de Ayuda</p>
+                <ul>
+                    <li><a>Contactanos</a></li>
+                    <li><a>Seguir tu pedido</a></li>
+                    <li><a>FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fin">Copyright © 2016. Asociacion de Comerciantes. Todos los derechos reservados</div>
+    </footer>
 </body>
 </html>
