@@ -6,6 +6,26 @@
     <section>
         <form class="formulario" runat="server">
             <h1>Crear Usuario</h1>
+            <%
+                    if ( Request.QueryString.Get("Error") != null){
+                        int Error = Int32.Parse(Request.QueryString.Get("Error"));
+                        switch(Error){
+                            case 1:
+                                Response.Write("<p class=\"error\" >El E-mail ingresado es invalido</p>");
+                                break;
+                            case 2:
+                                Response.Write("<p class=\"error\" >Algunos campos estan vacios</p>");
+                                break;
+                            case 3:
+                                Response.Write("<p class=\"error\" >La Contraseña es muy corta, debe tener al menos 8 Caracteres</p>");
+                                break;
+                            case 4:
+                                Response.Write("<p class=\"error\" >La Contraseña debe tener al menos una Minuscula, una Mayuscula y un Numero</p>");
+                                break;
+                        }
+                    }
+                    
+                     %>
             <p>Ingrese su e-mail</p>
             <asp:TextBox runat="server" ID="txt_correo" CssClass="txt_formulario" value="@"></asp:TextBox>
             <p>Ingrese su Contraseña</p>

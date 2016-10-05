@@ -70,6 +70,7 @@
     <Content Include="App\js\jquery.slides.min.js" />
     <Content Include="App\login.aspx" />
     <Content Include="App\register.aspx" />
+    <Content Include="App\usuario\perfil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +102,13 @@
     <Compile Include="App\register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App\usuario\perfil.aspx.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App\usuario\perfil.aspx.designer.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -113,7 +121,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\account\" />
     <Folder Include="App\css\fonts\" />
   </ItemGroup>
   <PropertyGroup>
