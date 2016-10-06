@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CentroComercial" id="630BCCE1-21ED-F519-942A-E3173BD5CDE3" version="3.5">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-03 17:41:27 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>630BCCE1-21ED-F519-942A-E3173BD5CDE3</designId>
+</OSDM_Design>
