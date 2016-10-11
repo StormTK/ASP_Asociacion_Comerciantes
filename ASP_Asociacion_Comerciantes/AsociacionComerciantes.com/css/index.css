@@ -1,0 +1,62 @@
+﻿.slides_contenedor {
+    width: 95%;
+    max-width: 1600px;
+    margin: 5px auto;
+    position: relative;
+}
+
+.slides {
+    width: 100%;
+}
+
+    .slides img {
+        width: 100%;
+        z-index: 50;
+    }
+
+.slidesjs-navigation {
+    display: none;
+}
+
+.slidesjs-pagination {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    list-style: none;
+    z-index: 100;
+}
+
+    .slidesjs-pagination li {
+        display: inline-block;
+        margin: 10px 1px;
+    }
+
+        .slidesjs-pagination li a {
+            background-image: url(../imagenes/pagination.png);
+            background-position: 0 0;
+            width: 13px;
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+            .slidesjs-pagination li a.active,
+            .slidesjs-pagination li a:hover.active {
+                background-position: 0 -13px;
+            }
+
+            .slidesjs-pagination li a:hover {
+                background-position: 0 -26px;
+            }
+
+
+.Caja_Ventas {
+    width: 90%;
+    margin: 10px auto;
+    min-height: 300px;
+    background: #f1f1f1;
+    padding: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #a4a4a4;
+}

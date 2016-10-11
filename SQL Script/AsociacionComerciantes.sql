@@ -4,23 +4,25 @@ Create Table Usuario(
 	contraseña	nvarchar(18) NOT NULL,
 	nombre		nvarchar(30) NOT NULL,
 	apellido	nvarchar(30) NOT NULL,
-	Rol			int NOT NULL,
+	sexo		bit NOT NULL,
+	rol			int NOT NULL,
 	telefono	nvarchar(12) NULL,
 	noCuenta	nvarchar(12) NULL,
-	noTarjeta	nvarchar(12) NULL
+	noTarjeta	nvarchar(12) NULL,
+	estado		int NOT NULL
 );
 
-Create Table Accion(
-	idAccion	int,
+Create Table Historial(
+	idHistorial	int,
 	idusuario	int,
-	fecha		datetime NOT NULL,
+	fecha		datetime NOT NULL DEFAULT GETDATE(),
 	descrip		varchar(80) NOT NULL,
-	CONSTRAINT pk_accion PRIMARY KEY(idAccion, idusuario),
+	CONSTRAINT pk_accion PRIMARY KEY(idHistorial, idusuario),
 	CONSTRAINT fk_usuario FOREIGN KEY(idusuario) REFERENCES Usuario(idUsuario)
 );
 
-INSERT INTO Usuario(correo, contraseña, nombre, apellido, Rol) Values('Admin@AsoComer','Admin1234567','Administrador','AsoComer', 1)
-INSERT INTO Accion(idAccion, idusuario, fecha, descrip) Values(1,1,'2016-10-05T11:54:00','Se Registro en la Aplicacion')
+INSERT INTO Usuario(correo, contraseña, nombre, apellido, sexo, rol, estado) Values('Admin@AsoComer','Admin1234567','Administrador','AsoComer',1, 1,1)
+INSERT INTO Historial(idHistorial, idusuario, descrip) Values(1,1,'Se Registro en la Aplicacion')
+
 Select * from Usuario;
-UPDATE Usuario Set correo = 'ADMIN@ASOCOMER' where idUsuario = 1; 
-Select * from Accion;
+Select * from Historial;

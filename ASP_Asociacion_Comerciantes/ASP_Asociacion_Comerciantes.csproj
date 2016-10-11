@@ -58,61 +58,52 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\css\fonts.css" />
-    <Content Include="App\css\register.css" />
-    <Content Include="App\imagenes\fondologin.png" />
-    <Content Include="App\imagenes\Icono.ico" />
-    <Content Include="App\css\normalize.css" />
-    <Content Include="App\css\main.css" />
-    <Content Include="App\index.aspx" />
-    <Content Include="App\imagenes\Logotipo.png" />
-    <Content Include="App\js\jquery.slides.js" />
-    <Content Include="App\js\jquery.slides.min.js" />
-    <Content Include="App\login.aspx" />
-    <Content Include="App\register.aspx" />
-    <Content Include="App\usuario\perfil.aspx" />
+    <Content Include="AsociacionComerciantes.com\css\fonts.css" />
+    <Content Include="AsociacionComerciantes.com\css\login_register.css" />
+    <Content Include="AsociacionComerciantes.com\imagenes\fondologin.png" />
+    <Content Include="AsociacionComerciantes.com\imagenes\icono.ico" />
+    <Content Include="AsociacionComerciantes.com\css\normalize.css" />
+    <Content Include="AsociacionComerciantes.com\css\main.css" />
+    <Content Include="AsociacionComerciantes.com\imagenes\imagen1.png" />
+    <Content Include="AsociacionComerciantes.com\imagenes\imagen2.png" />
+    <Content Include="AsociacionComerciantes.com\imagenes\logotipo.png" />
+    <Content Include="AsociacionComerciantes.com\imagenes\pagination.png" />
+    <Content Include="AsociacionComerciantes.com\index.aspx" />
+    <Content Include="AsociacionComerciantes.com\css\index.css" />
+    <Content Include="AsociacionComerciantes.com\js\jquery-1.9.1.min.js" />
+    <Content Include="AsociacionComerciantes.com\js\jquery.slides.js" />
+    <Content Include="AsociacionComerciantes.com\js\jquery.slides.min.js" />
+    <Content Include="AsociacionComerciantes.com\register.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App\AsociacionComerciantes.Master.cs">
+    <Compile Include="AsociacionComerciantes.com\AsociacionComerciantes.Master.cs">
       <DependentUpon>AsociacionComerciantes.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App\AsociacionComerciantes.Master.designer.cs">
+    <Compile Include="AsociacionComerciantes.com\AsociacionComerciantes.Master.designer.cs">
       <DependentUpon>AsociacionComerciantes.Master</DependentUpon>
     </Compile>
-    <Compile Include="App\index.aspx.cs">
+    <Compile Include="AsociacionComerciantes.com\codigo\Historial.cs" />
+    <Compile Include="AsociacionComerciantes.com\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App\index.aspx.designer.cs">
+    <Compile Include="AsociacionComerciantes.com\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="App\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="App\register.aspx.cs">
+    <Compile Include="AsociacionComerciantes.com\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App\register.aspx.designer.cs">
+    <Compile Include="AsociacionComerciantes.com\register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App\usuario\perfil.aspx.cs">
-      <DependentUpon>perfil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="App\usuario\perfil.aspx.designer.cs">
-      <DependentUpon>perfil.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="AsociacionComerciantes.com\codigo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\AsociacionComerciantes.Master" />
+    <Content Include="AsociacionComerciantes.com\AsociacionComerciantes.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -121,14 +112,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\css\fonts\" />
+    <Folder Include="AsociacionComerciantes.com\css\fonts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>App\imagenes\Icono.ico</ApplicationIcon>
+    <ApplicationIcon>AsociacionComerciantes.com\imagenes\icono.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
