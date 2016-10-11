@@ -58,15 +58,6 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com {
         protected global::System.Web.UI.WebControls.RadioButtonList OpcionSexo;
         
         /// <summary>
-        /// Control aceptar_terminos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox aceptar_terminos;
-        
-        /// <summary>
         /// Control btn_Enviar.
         /// </summary>
         /// <remarks>

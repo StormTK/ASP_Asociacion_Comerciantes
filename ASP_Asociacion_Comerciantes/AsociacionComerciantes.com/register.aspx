@@ -54,9 +54,7 @@
                 <asp:ListItem Text="Hombre" Value="True"></asp:ListItem>
                 <asp:ListItem Text="Mujer" Value="False"></asp:ListItem>
             </asp:RadioButtonList>
-            
-            <p>Lee y Acepte nuestros terminos y Condiciones:</p>
-            <asp:CheckBox runat="server" ID="aceptar_terminos"/><a href="#" target="_blank"> Terminos y Condiciones</a>
+           
             <br />
             <asp:Button ID="btn_Enviar" Class="boton" runat="server" Text="Enviar" OnClick="btn_Enviar_Click" />
         </div>
