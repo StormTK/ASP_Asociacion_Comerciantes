@@ -9,8 +9,8 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
 {
     public class Usuario
     {
-        SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCIACIONCOMER;Integrated Security=True");
-        //SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
+        //SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCIACIONCOMER;Integrated Security=True");
+        SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
 
         public Boolean VerificarContraseña(String Contraseña)
         {
@@ -37,6 +37,7 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
                 cmd.Parameters.AddWithValue("@Email", Email); //enviamos los parametros
                 cmd.Parameters.AddWithValue("@Password", Contraseña);
                 int count = Convert.ToInt32(cmd.ExecuteScalar()); //devuelve la fila afectada
+                Conexion.Close();
                 if (count == 0)
                     return false;
                 else
@@ -47,6 +48,29 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
                 String MensajeError = "Insert Error:";
                 MensajeError += DetalleError.Message;
             }return false;
+        }
+
+        public Boolean VerificarExistenciaEmail(String Email)
+        {
+            String stg_sql = "Select COUNT(*)FROM Usuario WHERE correo = @Email";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);//ejecutamos la instruccion
+                cmd.Parameters.AddWithValue("@Email", Email); //enviamos los parametros
+                int count = Convert.ToInt32(cmd.ExecuteScalar()); //devuelve la fila afectada
+                Conexion.Close();
+                if (count == 0)
+                    return false;
+                else
+                    return true;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return false;
         }
 
         public int BuscaridUsuario_Email(String Email)
@@ -60,6 +84,7 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
                 SqlDataReader resultado = cmd.ExecuteReader();
                 resultado.Read();
                 int id = Convert.ToInt32(resultado["idUsuario"].ToString());
+                Conexion.Close();
                 return id;
             }
             catch (Exception DetalleError)
@@ -77,12 +102,13 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
             {
                 Conexion.Open();
                 SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
-                cmd.Parameters.Add("@Email", SqlDbType.NVarChar).Value = Email;
-                cmd.Parameters.Add("@Password", SqlDbType.NVarChar).Value = Password;
-                cmd.Parameters.Add("@Name", SqlDbType.NVarChar).Value = Nombre;
-                cmd.Parameters.Add("@Apellido", SqlDbType.NVarChar).Value = Apellido;
-                cmd.Parameters.Add("@Sexo", SqlDbType.Bit).Value = Sexo;
+                cmd.Parameters.AddWithValue("@Email", Email);
+                cmd.Parameters.AddWithValue("@Password", Password);
+                cmd.Parameters.AddWithValue("@Name", Nombre);
+                cmd.Parameters.AddWithValue("@Apellido", Apellido);
+                cmd.Parameters.AddWithValue("@Sexo", Sexo);
                 cmd.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception DetalleError)

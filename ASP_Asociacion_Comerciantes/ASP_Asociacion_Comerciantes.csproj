@@ -74,10 +74,11 @@
     <Content Include="AsociacionComerciantes.com\js\jquery.slides.js" />
     <Content Include="AsociacionComerciantes.com\js\jquery.slides.min.js" />
     <Content Include="AsociacionComerciantes.com\login.aspx" />
+    <Content Include="AsociacionComerciantes.com\logout.aspx" />
     <Content Include="AsociacionComerciantes.com\register.aspx" />
     <Content Include="AsociacionComerciantes.com\shopping-car.aspx" />
-    <Content Include="AsociacionComerciantes.com\usuario\editarperfil.aspx" />
-    <Content Include="AsociacionComerciantes.com\usuario\perfil.aspx" />
+    <Content Include="AsociacionComerciantes.com\editarperfil.aspx" />
+    <Content Include="AsociacionComerciantes.com\perfil.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +104,13 @@
     <Compile Include="AsociacionComerciantes.com\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AsociacionComerciantes.com\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AsociacionComerciantes.com\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AsociacionComerciantes.com\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -118,18 +126,18 @@
     <Compile Include="AsociacionComerciantes.com\shopping-car.aspx.designer.cs">
       <DependentUpon>shopping-car.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AsociacionComerciantes.com\usuario\editarperfil.aspx.cs">
+    <Compile Include="AsociacionComerciantes.com\editarperfil.aspx.cs">
       <DependentUpon>editarperfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AsociacionComerciantes.com\usuario\editarperfil.aspx.designer.cs">
+    <Compile Include="AsociacionComerciantes.com\editarperfil.aspx.designer.cs">
       <DependentUpon>editarperfil.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AsociacionComerciantes.com\usuario\perfil.aspx.cs">
+    <Compile Include="AsociacionComerciantes.com\perfil.aspx.cs">
       <DependentUpon>perfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AsociacionComerciantes.com\usuario\perfil.aspx.designer.cs">
+    <Compile Include="AsociacionComerciantes.com\perfil.aspx.designer.cs">
       <DependentUpon>perfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -144,8 +152,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AsociacionComerciantes.com\admin\" />
-    <Folder Include="AsociacionComerciantes.com\comercio\" />
     <Folder Include="AsociacionComerciantes.com\css\fonts\" />
   </ItemGroup>
   <PropertyGroup>

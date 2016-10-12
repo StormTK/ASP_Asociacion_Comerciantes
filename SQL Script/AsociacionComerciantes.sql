@@ -21,8 +21,8 @@ Create Table Historial(
 	CONSTRAINT fk_usuario FOREIGN KEY(idusuario) REFERENCES Usuario(idUsuario)
 );
 
-INSERT INTO Usuario(correo, contraseña, nombre, apellido, sexo, rol, estado) Values('Admin@AsoComer.com','Admin1234567','Administrador','AsoComer',1, 1,1)
+INSERT INTO Usuario(correo, contraseña, nombre, apellido, sexo, rol, estado) Values('ADMIN@ASOCOMER.COM','Admin1234567','Administrador','AsoComer',1, 1,1)
 INSERT INTO Historial(idHistorial, idusuario, descrip) Values(1,1,'Se Registro en la Aplicacion')
 
 Select * from Usuario;
-Select * from Historial;
+Select * from Historial

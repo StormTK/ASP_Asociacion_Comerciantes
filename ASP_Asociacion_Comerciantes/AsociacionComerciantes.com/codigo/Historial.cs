@@ -11,15 +11,18 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
     {
         //SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCIACIONCOMER;Integrated Security=True");
         SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
-        public Boolean RegistrarHistorial(int idusuario)
+        public Boolean RegistrarHistorial(int idhistorial, int idusuario, String Registro)
         {
-            String stg_sql = "INSERT INTO Historial(idHistorial, idusuario, descrip) Values(1, @idUsuario, 'Se Registro en la Aplicacion')";
+            String stg_sql = "INSERT INTO Historial(idHistorial, idusuario, descrip) Values(@idHistorial, @idUsuario, @Descripcion)";
             try
             {
                 Conexion.Open();
                 SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.Add("@idHistorial", SqlDbType.Int).Value = idhistorial;
                 cmd.Parameters.Add("@idUsuario", SqlDbType.Int).Value = idusuario;
+                cmd.Parameters.Add("@Descripcion", SqlDbType.NVarChar).Value = Registro;
                 cmd.ExecuteNonQuery();
+                Conexion.Close();
                 return true;
             }
             catch (Exception DetalleError)

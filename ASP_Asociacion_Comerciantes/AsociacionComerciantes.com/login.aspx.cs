@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,11 +19,12 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com
 
         public void btn_Login_Click(object sender, EventArgs e)
         {
-            String Email = txt_correo.Text;
+            String Email = txt_correo.Text.ToUpper();
             String Password = txt_contraseña.Text;
-            if(usuario_login.AutenticarUsuario(Email,Password) == true)
+
+            if (usuario_login.AutenticarUsuario(Email, Password) == true)
             {
-                if(Session["Usuario"] == null)
+                if (Session["Usuario"] == null)
                 {
                     Session["Usuario"] = Email;
                     Response.Redirect("index.aspx");

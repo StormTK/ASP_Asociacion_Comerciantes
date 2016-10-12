@@ -38,6 +38,11 @@
         padding: 15px 0px 5px 0px;
     }
 
+    .formulario table {
+        width: 100px;
+        margin: 0 auto;
+    }
+
     .formulario .boton {
         border-radius: 7px 7px 7px 7px;
         -moz-border-radius: 7px 7px 7px 7px;
@@ -52,6 +57,7 @@
         color: #ffffff;
     }
 
-.boton:hover {
-    font-size: 25px;
-}
+        .formulario .boton:hover {
+            padding: 0;
+            font-size: 25px;
+        }
