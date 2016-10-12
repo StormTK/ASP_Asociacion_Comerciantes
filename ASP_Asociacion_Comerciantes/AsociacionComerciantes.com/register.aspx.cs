@@ -24,19 +24,6 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com
             String Nombre = txt_nombre.Text;
             String Apellido = txt_apellido.Text;
             //bool Sexo = Convert.ToBoolean(OpcionSexo.Text);
-            Boolean Terminos = aceptar_terminos.Checked;
-
-            if (Terminos == false)
-            {
-                Response.Redirect("register.aspx?Error=1");
-            }
-            else
-            {
-                if (registrar.BuscarUsuarioEmail(Email) != 0)
-                {
-                    Response.Redirect("register.aspx?Error=6");
-                }
-            }
                 
             //registrar.RegistrarUsuario(Email, Password, Nombre, Apellido, Sexo);
             //int idUsuario = registrar.BuscarUsuarioEmail(Email);

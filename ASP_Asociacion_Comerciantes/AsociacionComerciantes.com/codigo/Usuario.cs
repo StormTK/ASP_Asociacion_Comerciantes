@@ -9,8 +9,8 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
 {
     public class Usuario
     {
-        //SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCIACIONCOMER;Integrated Security=True");
-        SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
+        SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCIACIONCOMER;Integrated Security=True");
+        //SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
 
         public Boolean VerificarContraseña(String Contraseña)
         {
@@ -27,7 +27,29 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
             }
         }
 
-        public int BuscarUsuarioEmail(String Email)
+        public Boolean AutenticarUsuario(String Email, String Contraseña)
+        {
+            String stg_sql = "Select COUNT(*)FROM Usuario WHERE correo = @Email AND contraseña = @Password";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);//ejecutamos la instruccion
+                cmd.Parameters.AddWithValue("@Email", Email); //enviamos los parametros
+                cmd.Parameters.AddWithValue("@Password", Contraseña);
+                int count = Convert.ToInt32(cmd.ExecuteScalar()); //devuelve la fila afectada
+                if (count == 0)
+                    return false;
+                else
+                    return true;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }return false;
+        }
+
+        public int BuscaridUsuario_Email(String Email)
         {
             String stg_sql = "Select idUsuario from Usuario WHERE correo = @Email";
             try

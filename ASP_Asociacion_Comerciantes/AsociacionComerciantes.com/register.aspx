@@ -56,7 +56,7 @@
             </asp:RadioButtonList>
            
             <br />
-            <asp:Button ID="btn_Enviar" Class="boton" runat="server" Text="Enviar" OnClick="btn_Enviar_Click" />
+            <asp:Button ID="btn_Enviar" Class="boton" runat="server" Text="Registrarse" OnClick="btn_Enviar_Click" />
         </div>
     </section>
 </asp:Content>

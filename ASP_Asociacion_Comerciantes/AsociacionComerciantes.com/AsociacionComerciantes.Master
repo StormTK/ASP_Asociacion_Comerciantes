@@ -15,25 +15,47 @@
 <body>
     <form runat="server">
         <header>
-            <div id="cabecera">
-                <a href="index.aspx" title="Asociacion de Comerciantes S.A.">
-                    <img src="imagenes/logotipo.png" /></a>
+            <div class="cabecera">
+                <a id="logo" href="index.aspx" title="Asociacion de Comerciantes S.A.">
+                    <img src="imagenes/logotipo.png" />
+                </a>
             </div>
-            <div id="buscador">
+            <div class="cabecera user_search">
+                <div id="buscador">
+                    <asp:TextBox runat="server" ID="barra_search" type="search" name="busqueda" placeholder="Buscar Producto..."></asp:TextBox>
+                    <asp:Button runat="server" ID="btn_search" class="icon-search" type="submit" Text="" />
+                </div>
+                <div id="iniciarsesion">
+                    <%
 
-                <asp:TextBox runat="server" ID="barra_search" type="search" name="busqueda" placeholder="Buscar Producto..."></asp:TextBox>
-                <asp:Button runat="server" ID="btn_search" class="icon-search" type="submit" Text="" />
+                        String MenuCliente = "<a href=\"register.aspx\"><span class=\"icon-register\">Registrarse</span></a><span>|</span><a href=\"login.aspx\"><span class=\"icon-enter\">Iniciar Sesión</span></a>";
 
+                        if (Session["Usuario"] == null)
+                        {
+                            Response.Write(MenuCliente);
+                        }
+                        else
+                        {
+                            String Socio = "<a href=\"register.aspx\"><span class=\"icon-usuario\">Hola" + Session["Usuario"] + "</span></a>";
+                            Response.Write(Socio);
+                        }
+                    %>
+                </div>
             </div>
-            <div id="iniciarsesion">
-                <a href="login.aspx"><span class="icon-enter">Iniciar Sesión</span></a>
-                <span>|</span>
-                <a href="register.aspx"><span class="icon-register">Registrarse</span></a>
+            <div class="cabecera">
+                <a class="compra" href="shopping-car.aspx">
+                    <span class="CantidaProducto">0</span>
+                    <span class="icon-circulo"></span>
+                    <p class="icon-shopping-car"></p>
+                    <p class="titulo-car">Carrito de Compra</p>
+                </a>
             </div>
         </header>
+        <div class="contenedorbody">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
     </form>
     <footer>
         <div class="inicio">

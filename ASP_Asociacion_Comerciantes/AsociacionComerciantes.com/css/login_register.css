@@ -1,9 +1,9 @@
-﻿section{
+﻿section {
     background: url("../imagenes/fondologin.png") repeat #2B9EB1;
-    padding: 15px 0px; 
+    padding: 15px 0px;
 }
 
-.formulario{
+.formulario {
     width: 500px;
     margin: 0px auto;
     background: #ECC881;
@@ -16,42 +16,42 @@
     text-align: center;
 }
 
-.txt_formulario{
-    width: 400px;
-    text-align:center;
-    padding: 7px 0px;
-    border-radius: 7px 7px 7px 7px;
-    -moz-border-radius: 7px 7px 7px 7px;
-    -webkit-border-radius: 7px 7px 7px 7px;
-    border: 0px solid #000000;
-}
+    .formulario .txt_formulario {
+        width: 400px;
+        text-align: center;
+        padding: 7px 0px;
+        border-radius: 7px 7px 7px 7px;
+        -moz-border-radius: 7px 7px 7px 7px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        border: 0px solid #000000;
+    }
 
-form .error{
-    background: #510909;
-    border: 1px dotted #2c0202;
-    color: #f8f8f8;
-    padding: 7px 5px;
-    margin-top: 10px;
-}
+    .formulario .error {
+        background: #510909;
+        border: 1px dotted #2c0202;
+        color: #f8f8f8;
+        padding: 7px 5px;
+        margin-top: 10px;
+    }
 
-form p{
-    padding: 15px 0px 5px 0px;
-}
+    .formulario p {
+        padding: 15px 0px 5px 0px;
+    }
 
-.boton{
-     border-radius: 7px 7px 7px 7px;
-    -moz-border-radius: 7px 7px 7px 7px;
-    -webkit-border-radius: 7px 7px 7px 7px;
-    border: 2px solid #236939;
-    margin-top: 10px;
-    width: 200px;
-    height: 40px;
-    padding: 5px;
-    text-align:center;
-    background: #279B96;
-    color: #ffffff;
-}
+    .formulario .boton {
+        border-radius: 7px 7px 7px 7px;
+        -moz-border-radius: 7px 7px 7px 7px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        border: 2px solid #236939;
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        padding: 5px;
+        text-align: center;
+        background: #279B96;
+        color: #ffffff;
+    }
 
-.boton:hover{
+.boton:hover {
     font-size: 25px;
 }
