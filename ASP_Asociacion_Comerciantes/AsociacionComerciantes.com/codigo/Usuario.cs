@@ -9,8 +9,8 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
 {
     public class Usuario
     {
-        SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
-        //SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
+        //SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
+        SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
 
         public Boolean VerificarContraseña(String Contraseña)
         {
@@ -200,7 +200,7 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
 
                 if (idusuario == idusuariovisitante)
                 {
-                    html += "<div class=\"botonesPerfil\"><a href = \"perfil.aspx?id=" + idusuario + "\" class=\"BotonPerfil\"><span class=\"icon-male-user\"></span>VerPerfil</a><a href = \"editarperfil.aspx\" class=\"BotonPerfil\"><span class=\"icon-pencil\"></span>Editar Perfil</a><a href = \"user-historial.aspx\" class=\"BotonPerfil\"><span class=\"icon-book\"></span>Ver Historial</a></div>";
+                    html += "<div class=\"botonesPerfil\"><a href = \"perfil.aspx?id=" + idusuario + "\" class=\"BotonPerfil\"><span class=\"icon-male-user\"></span>Ver Perfil</a><a href = \"editarperfil.aspx\" class=\"BotonPerfil\"><span class=\"icon-pencil\"></span>Editar Perfil</a><a href = \"userhistorial.aspx\" class=\"BotonPerfil\"><span class=\"icon-book\"></span>Ver Historial</a></div>";
                 }
 
                 html += "<h3>Informacion del Usuario</h3><div class=\"dato\"><p class=\"pregunta\">Correo: </p><p class=\"respuesta\" > " + correo + "</p> </div>";
@@ -264,7 +264,7 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
                         html += "<h3 class=\"nombre\">Socio</h3>";
                         break;
                 }
-                html += "</div ><div class=\"informacionUsuario\"><div class=\"botonesPerfil\"><a href = \"perfil.aspx?id=" + idusuario + "\" class=\"BotonPerfil\"><span class=\"icon-male-user\"></span>VerPerfil</a><a href = \"editarperfil.aspx\" class=\"BotonPerfil\"><span class=\"icon-pencil\"></span>Editar Perfil</a><a href = \"user-historial.aspx\" class=\"BotonPerfil\"><span class=\"icon-book\"></span>Ver Historial</a></div>";
+                html += "</div ><div class=\"informacionUsuario\"><div class=\"botonesPerfil\"><a href = \"perfil.aspx?id=" + idusuario + "\" class=\"BotonPerfil\"><span class=\"icon-male-user\"></span>VerPerfil</a><a href = \"editarperfil.aspx\" class=\"BotonPerfil\"><span class=\"icon-pencil\"></span>Editar Perfil</a><a href = \"userhistorial.aspx\" class=\"BotonPerfil\"><span class=\"icon-book\"></span>Ver Historial</a></div>";
                 Conexion.Close();
                 return html;
             }

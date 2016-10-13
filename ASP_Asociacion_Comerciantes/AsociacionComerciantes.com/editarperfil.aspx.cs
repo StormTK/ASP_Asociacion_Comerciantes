@@ -9,9 +9,11 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.usuario
 {
     public partial class editarperfil : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+        
     }
 }

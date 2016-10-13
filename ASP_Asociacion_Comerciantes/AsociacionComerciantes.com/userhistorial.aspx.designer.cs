@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.usuario {
+namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com {
     
     
     public partial class userhistorial {

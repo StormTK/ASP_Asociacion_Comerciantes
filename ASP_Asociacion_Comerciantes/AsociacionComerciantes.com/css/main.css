@@ -113,7 +113,6 @@ header {
     }
 
     header .cabecera a .icon-circulo {
-        padding-top: 1px;
         font-size: 30px;
         position: absolute;
         left: 70px;

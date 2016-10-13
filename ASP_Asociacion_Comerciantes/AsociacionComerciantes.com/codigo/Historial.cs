@@ -9,8 +9,8 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
 {
     public class Historial
     {
-        SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
-        //SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
+        //SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
+        SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
         public Boolean RegistrarHistorial(int idhistorial, int idusuario, String Registro)
         {
             String stg_sql = "INSERT INTO Historial(idHistorial, idusuario, descrip) Values(@idHistorial, @idUsuario, @Descripcion)";
@@ -57,14 +57,14 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
 
         public String verHistorial(int idUsuario)
         {
-            String stg_sql = "Select idusuario,fecha,descrip from Historial WHERE idusuario = @idUsuario ORDER BY idHistorial ASC";
+            String stg_sql = "Select idHistorial,fecha,descrip from Historial WHERE idusuario = @idUsuario ORDER BY idHistorial ASC";
             try
             {
                 Conexion.Open();
                 SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
                 cmd.Parameters.Add("@idusuario", SqlDbType.Int).Value = idUsuario;
                 SqlDataReader resultado = cmd.ExecuteReader();
-                String HTML = "<h3>Historial de Acciones del Usuario</h3><table><tr><td>No.</td><td>Fecha</td><td>Descripcion</td></tr>";
+                String HTML = "<h3>Historial de Acciones del Usuario</h3><table><tr><th>No.</th><th>Fecha</th><th>Descripcion</th></tr>";
                 while (resultado.Read())
                 {
                     HTML += "<tr><td>" + resultado["idHistorial"].ToString() + "</td>";

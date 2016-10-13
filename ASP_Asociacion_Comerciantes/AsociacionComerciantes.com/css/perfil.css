@@ -107,12 +107,28 @@
         width: 100%;
     }
 
-        section .informacionUsuario .dato .pregunta,
-        section .informacionUsuario .dato .respuesta {
-            display: inline-block;
-            padding: 5px 5px;
+    section .informacionUsuario table {
+        width: 100%;
+        border: 1px solid #777777;
+        background: #fff;
+    }
+
+        section .informacionUsuario table th,
+        section .informacionUsuario table td {
+            border-bottom: 1px solid #ddd;
         }
 
-        section .informacionUsuario .dato .pregunta {
-            font-weight: bolder;
+        section .informacionUsuario table th {
+            font-size: 20px;
+            font-weight: bold;
         }
+
+    section .informacionUsuario .dato .pregunta,
+    section .informacionUsuario .dato .respuesta {
+        display: inline-block;
+        padding: 5px 5px;
+    }
+
+    section .informacionUsuario .dato .pregunta {
+        font-weight: bolder;
+    }
