@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.AsociacionComerciantes" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAACAAAAAAAAAAABAAAIAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\AsociacionComerciantes.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.index" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\index.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.login" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAIAAAIAABAAAAAAAAAAAAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.logout" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\logout.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.register" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIBAAAAAAAAAABQAAABAAABAAAAAAIAIAAAAICAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\register.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.shopping_car" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\shopping-car.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo.Historial" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAACAAgAABAAAAAAAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\codigo\Historial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo.Usuario" Collapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgAQAAIAAAAAAAAACBAAAAAAAQAAAAAAAAAAAAUAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\codigo\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.usuario.editarperfil" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\editarperfil.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.usuario.perfil" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\perfil.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.usuario.userhistorial" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAASAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AsociacionComerciantes.com\userhistorial.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -47,7 +47,7 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com
                                 {
                                     if(registrarEvento.RegistrarHistorial(1, idUsuario, "Se Registro en la Aplicacion Web.") == true)
                                     {
-                                        Response.Redirect("login.aspx?verif=si");
+                                        Response.Redirect("login.aspx?msg=2");
                                     }
                                 }
                                 else

@@ -26,12 +26,31 @@
         border: 0px solid #000000;
     }
 
+    .formulario .advertencia {
+        background: #e8f205;
+        border: 1px dotted #2c0202;
+        color: #000;
+        padding: 7px 5px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .formulario .login {
+        background: #298609;
+        border: 1px dotted #2c0202;
+        color: #f8f8f8;
+        padding: 7px 5px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
     .formulario .error {
         background: #510909;
         border: 1px dotted #2c0202;
         color: #f8f8f8;
         padding: 7px 5px;
         margin-top: 10px;
+        font-size: 20px;
     }
 
     .formulario p {

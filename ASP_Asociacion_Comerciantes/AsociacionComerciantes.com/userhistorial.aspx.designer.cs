@@ -10,6 +10,6 @@
 namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.usuario {
     
     
-    public partial class perfil {
+    public partial class userhistorial {
     }
 }

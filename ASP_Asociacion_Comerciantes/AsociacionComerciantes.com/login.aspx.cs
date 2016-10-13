@@ -26,7 +26,14 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com
             {
                 if (Session["Usuario"] == null)
                 {
-                    Session["Usuario"] = Email;
+                    Session["Usuario"] = usuario_login.GuardarUsuario(Email);
+                    Response.Redirect("index.aspx");
+                }
+                else
+                {
+                    Session.Abandon();
+                    Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
+                    Session["Usuario"] = usuario_login.GuardarUsuario(Email);
                     Response.Redirect("index.aspx");
                 }
             }

@@ -36,7 +36,8 @@
                         }
                         else
                         {
-                            String Socio = "<a href=\"logout.aspx\"><span class=\"icon-exit\">Cerrar Sesión</span></a> </span></a><span>|</span><a href=\"perfil.aspx\"><span class=\"icon-usuario\">Hola " + Session["Usuario"] + "";
+                            String[] usuario = (String[])Session["Usuario"];
+                            String Socio = "<a href=\"logout.aspx\"><span class=\"icon-exit\">Cerrar Sesión</span></a> </span></a><span>|</span><a href=\"perfil.aspx?id=" + usuario[0] +" \"><span class=\"icon-usuario\">" + usuario[2] + " " + usuario[3] +"</span></a>";
                             Response.Write(Socio);
                         }
                     %>

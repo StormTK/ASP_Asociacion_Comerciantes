@@ -1,0 +1,118 @@
+﻿section {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #8f8f8f;
+}
+
+    section .cabecerausuario {
+        background: #0b4b67;
+    }
+
+        section .cabecerausuario .perfil {
+            padding-top: 10px;
+            width: 300px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+            section .cabecerausuario .perfil p {
+                margin: 0 auto;
+                width: 170px;
+                font-size: 150px;
+                background: #fff;
+                border-radius: 10px 10px 10px 10px;
+                -moz-border-radius: 10px 10px 10px 10px;
+                -webkit-border-radius: 10px 10px 10px 10px;
+                border: 5px solid #0f7a86;
+            }
+
+            section .cabecerausuario .perfil h2 {
+                padding-top: 7px;
+                color: #fff;
+                width: 100%;
+                font-weight: bolder;
+                font-size: 35px;
+            }
+
+            section .cabecerausuario .perfil h3 {
+                color: #15c0d4;
+                font-size: 25px;
+                width: 100%;
+                font-weight: bolder;
+            }
+
+    section .informacionUsuario {
+        background: #f7f7f7;
+        text-align: center;
+        padding: 5px;
+    }
+
+        section .informacionUsuario h3 {
+            padding: 5px 0px;
+            font-size: 25px;
+        }
+
+    section .invalido {
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        padding: 200px 0px;
+    }
+
+    section .informacionUsuario .BotonPerfil {
+        margin: 0px 5px;
+        -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+        -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+        box-shadow: inset 0px 1px 0px 0px #ffffff;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+        background: -moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+        background: -webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+        background: -o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+        background: -ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+        background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+        background-color: #ededed;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        border: 1px solid #dcdcdc;
+        display: inline-block;
+        cursor: pointer;
+        color: #777777;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 12px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffffff;
+    }
+
+        section .informacionUsuario .BotonPerfil:hover {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+            background: -moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+            background: -webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+            background: -o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+            background: -ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+            background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+            background-color: #dfdfdf;
+        }
+
+        section .informacionUsuario .BotonPerfil:active {
+            position: relative;
+            top: 1px;
+        }
+
+    section .informacionUsuario .dato {
+        width: 100%;
+    }
+
+        section .informacionUsuario .dato .pregunta,
+        section .informacionUsuario .dato .respuesta {
+            display: inline-block;
+            padding: 5px 5px;
+        }
+
+        section .informacionUsuario .dato .pregunta {
+            font-weight: bolder;
+        }

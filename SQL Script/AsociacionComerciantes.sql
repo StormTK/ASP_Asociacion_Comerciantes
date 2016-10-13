@@ -22,7 +22,11 @@ Create Table Historial(
 );
 
 INSERT INTO Usuario(correo, contraseña, nombre, apellido, sexo, rol, estado) Values('ADMIN@ASOCOMER.COM','Admin1234567','Administrador','AsoComer',1, 1,1)
-INSERT INTO Historial(idHistorial, idusuario, descrip) Values(1,1,'Se Registro en la Aplicacion')
+INSERT INTO Historial(idHistorial, idusuario, descrip) Values(1,1,'Se Registro en la Aplicacion Web')
 
 Select * from Usuario;
 Select * from Historial
+
+Select MAX(idHistorial) from Historial WHERE idusuario = 1
+
+/*INTO UPDATE Historial SET descrip = "Se Registro en la Aplicación Web" where idusuario = 1*/

@@ -58,8 +58,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AsociacionComerciantes.com\css\fonts.css" />
+    <Content Include="AsociacionComerciantes.com\css\fonts\icomoon.svg" />
     <Content Include="AsociacionComerciantes.com\css\login_register.css" />
+    <Content Include="AsociacionComerciantes.com\css\perfil.css" />
+    <Content Include="AsociacionComerciantes.com\css\fonts.css" />
     <Content Include="AsociacionComerciantes.com\imagenes\fondologin.png" />
     <Content Include="AsociacionComerciantes.com\imagenes\icono.ico" />
     <Content Include="AsociacionComerciantes.com\css\normalize.css" />
@@ -79,6 +81,7 @@
     <Content Include="AsociacionComerciantes.com\shopping-car.aspx" />
     <Content Include="AsociacionComerciantes.com\editarperfil.aspx" />
     <Content Include="AsociacionComerciantes.com\perfil.aspx" />
+    <Content Include="AsociacionComerciantes.com\userhistorial.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -140,10 +143,20 @@
     <Compile Include="AsociacionComerciantes.com\perfil.aspx.designer.cs">
       <DependentUpon>perfil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AsociacionComerciantes.com\userhistorial.aspx.cs">
+      <DependentUpon>userhistorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AsociacionComerciantes.com\userhistorial.aspx.designer.cs">
+      <DependentUpon>userhistorial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AsociacionComerciantes.com\AsociacionComerciantes.Master" />
+    <Content Include="AsociacionComerciantes.com\css\fonts\icomoon.eot" />
+    <Content Include="AsociacionComerciantes.com\css\fonts\icomoon.ttf" />
+    <Content Include="AsociacionComerciantes.com\css\fonts\icomoon.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -151,9 +164,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AsociacionComerciantes.com\css\fonts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

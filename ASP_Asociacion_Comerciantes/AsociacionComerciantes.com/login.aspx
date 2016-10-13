@@ -8,23 +8,20 @@
         <div class="formulario">
             <h2>Login</h2>
             <%
-                if(Request.QueryString.Get("verif") != null)
+                              
+                if (Request.QueryString.Get("msg") != null)
                 {
-                    String verif = Request.QueryString.Get("verif");
-                    switch (verif)
-                    {
-                        case "si":
-                            Response.Write("<p class=\"login\" > <span class=\"icon-error\"> </span>Se ha Registrado en la Aplicacion</p>");
-                            break;
-                    }
-                }
-                if (Request.QueryString.Get("Error") != null)
-                {
-                    int Error = Int32.Parse(Request.QueryString.Get("Error"));
-                    switch (Error)
+                    int msg = Int32.Parse(Request.QueryString.Get("msg"));
+                    switch (msg)
                     {
                         case 1:
                             Response.Write("<p class=\"error\" > <span class=\"icon-error\"> </span> Email/Password Incorrecto</p>");
+                            break;
+                        case 2:
+                            Response.Write("<p class=\"login\" > <span class=\"icon-check-mark\"> </span>Se ha Registrado en la Aplicacion Web <br /> Inicie Sesion para Comenzar</p>");
+                            break;
+                        case 3:
+                           Response.Write("<p class=\"advertencia\" > <span class=\"icon-peligo\"> </span>Para acceder a esta pagina necesita <br />Iniciar Sesión</p>");
                             break;
                     }
                 }

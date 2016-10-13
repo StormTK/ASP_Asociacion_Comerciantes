@@ -7,17 +7,18 @@ using System.Web.UI.WebControls;
 
 namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.usuario
 {
-    public partial class perfil : System.Web.UI.Page
+    public partial class userhistorial : System.Web.UI.Page
     {
-        codigo.Usuario mostrarUsuario = new codigo.Usuario();
+        codigo.Usuario MostrarUsuario = new codigo.Usuario();
+        codigo.Historial MostrarHistorial = new codigo.Historial();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-        public String MostrarPerfil(int id, int idvisitante)
+        public String MostrarHistorialHTML(int iduser)
         {
-            return mostrarUsuario.PerfilUsuario(id, idvisitante);
+            return MostrarUsuario.PortadaUsuario(iduser);
         }
     }
 }

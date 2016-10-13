@@ -9,8 +9,8 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
 {
     public class Historial
     {
-        //SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCIACIONCOMER;Integrated Security=True");
-        SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
+        SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
+        //SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
         public Boolean RegistrarHistorial(int idhistorial, int idusuario, String Registro)
         {
             String stg_sql = "INSERT INTO Historial(idHistorial, idusuario, descrip) Values(@idHistorial, @idUsuario, @Descripcion)";
@@ -31,6 +31,56 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
                 MensajeError += DetalleError.Message;
             }
             return false;
+        }
+
+        public int UltimaAccion(int idUsuario)
+        {
+            String stg_sql = "Select MAX(idHistorial) from Historial WHERE idusuario = @idusuario";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.Add("@idusuario", SqlDbType.Int).Value = idUsuario;
+                SqlDataReader resultado = cmd.ExecuteReader();
+                resultado.Read();
+                int id = Convert.ToInt32(resultado["idUsuario"].ToString());
+                Conexion.Close();
+                return id;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return 0;
+        }
+
+        public String verHistorial(int idUsuario)
+        {
+            String stg_sql = "Select idusuario,fecha,descrip from Historial WHERE idusuario = @idUsuario ORDER BY idHistorial ASC";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.Add("@idusuario", SqlDbType.Int).Value = idUsuario;
+                SqlDataReader resultado = cmd.ExecuteReader();
+                String HTML = "<h3>Historial de Acciones del Usuario</h3><table><tr><td>No.</td><td>Fecha</td><td>Descripcion</td></tr>";
+                while (resultado.Read())
+                {
+                    HTML += "<tr><td>" + resultado["idHistorial"].ToString() + "</td>";
+                    HTML += "<td>" + resultado["fecha"].ToString() + "</td>";
+                    HTML += "<td>" + resultado["descrip"].ToString() + "</td></tr>";
+                }
+                HTML += "</table></div>";
+                Conexion.Close();
+                return HTML;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return "<p class=\"invalido\">:c <br />Error 404<br />No se Mostrar el Historial de Usuario </p>";
         }
     }
 }
