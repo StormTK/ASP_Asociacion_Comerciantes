@@ -5,19 +5,88 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Perfil: 
-    </title>
+    <title>Perfil</title>
+    <link href="../css/fonts.css" rel="stylesheet" />
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/main.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="usuarioasocomer" runat="server">
+        <header>
+            <div class="cabecera">
+                <a id="logo" href="index.aspx" title="Asociacion de Comerciantes S.A.">
+                    <p></p>
+                </a>
+            </div>
+            <div class="cabecera user_search">
+                <div id="buscador">
+                    <asp:TextBox runat="server" ID="barra_search" type="search" name="busqueda" placeholder="Buscar Producto..."></asp:TextBox>
+                    <asp:Button runat="server" ID="btn_search" class="icon-search" type="submit" Text="" />
+                </div>
+                <div id="iniciarsesion">
+                    <%
+
+                        String MenuCliente = "<a href=\"register.aspx\"><span class=\"icon-register\">Registrarse</span></a><span>|</span><a href=\"login.aspx\"><span class=\"icon-enter\">Iniciar Sesión</span></a>";
+
+                        if (Session["Usuario"] == null)
+                        {
+                            Response.Write(MenuCliente);
+                        }
+                        else
+                        {
+                            String[] usuario = (String[])Session["Usuario"];
+                            String Socio = "<a href=\"logout.aspx\"><span class=\"icon-exit\">Cerrar Sesión</span></a> </span></a><span>|</span><a href=\"perfil.aspx?id=" + usuario[0] +" \"><span class=\"icon-usuario\">" + usuario[2] + " " + usuario[3] +"</span></a>";
+                            Response.Write(Socio);
+                        }
+                    %>
+                </div>
+            </div>
+            <div class="cabecera">
+                <a class="compra" href="shopping-car.aspx">
+                    <span class="CantidaProducto">0</span>
+                    <span class="icon-circulo"></span>
+                    <p class="icon-shopping-car"></p>
+                    <p class="titulo-car">Carrito de Compra</p>
+                </a>
+            </div>
+        </header>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        <footer>
+            <div class="footer_inicio">
+                <div class="footer_link">
+                    <p>Quienes Somos</p>
+                    <ul>
+                        <li><a>Sobre la Asociación</a></li>
+                        <li><a>Socios</a></li>
+                        <li><a>Asociados</a></li>
+                        <li><a>Empleos</a></li>
+                    </ul>
+                </div>
+                <div class="footer_link">
+                    <p>Politicas y Servicios</p>
+                    <ul>
+                        <li><a>Terminos y Condiciones</a></li>
+                        <li><a>Aviso de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer_link_fin">
+                    <p>Centro de Ayuda</p>
+                    <ul>
+                        <li><a>Contactanos</a></li>
+                        <li><a>Seguir tu pedido</a></li>
+                        <li><a>FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_final">
+                Copyright © 2016. Asociacion de Comerciantes. Todos los derechos reservados
+            </div>
+        </footer>
     </form>
 </body>
 </html>
