@@ -1,0 +1,53 @@
+﻿.slides_contenedor {
+    width: 99%;
+    max-width: 1600px;
+    margin: 5px auto;
+}
+
+.slides {
+    width: 100%;
+    position: relative;
+}
+
+    .slides img {
+        width: 100%;
+        z-index: 5;
+    }
+
+.slidesjs-navigation {
+    display: none;
+}
+
+.slidesjs-pagination {
+    margin: 6px 0 0;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    list-style: none;
+    z-index: 10;
+}
+
+    .slidesjs-pagination li {
+        float: left;
+        margin: 0 1px;
+    }
+
+        .slidesjs-pagination li a {
+            display: block;
+            width: 13px;
+            height: 0;
+            padding-top: 13px;
+            background-image: url("../imagenes/pagination.png");
+            background-position: 0 0;
+            float: left;
+            overflow: hidden;
+        }
+
+            .slidesjs-pagination li a.active,
+            .slidesjs-pagination li a:hover.active {
+                background-position: 0 -13px;
+            }
+
+            .slidesjs-pagination li a:hover {
+                background-position: 0 -26px;
+            }

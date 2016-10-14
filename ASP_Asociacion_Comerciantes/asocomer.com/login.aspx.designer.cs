@@ -7,36 +7,36 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ASP_Asociacion_Comerciantes.www.asocomer.com {
+namespace ASP_Asociacion_Comerciantes.asocomer.com {
     
     
-    public partial class Asocomer {
+    public partial class login {
         
         /// <summary>
-        /// Control head.
+        /// Control txt_correo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox txt_correo;
         
         /// <summary>
-        /// Control form1.
+        /// Control txt_contraseña.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txt_contraseña;
         
         /// <summary>
-        /// Control ContentPlaceHolder1.
+        /// Control btn_Enviar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button btn_Enviar;
     }
 }

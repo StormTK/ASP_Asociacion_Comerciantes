@@ -14,18 +14,7 @@
 </head>
 <body>
     <form runat="server">
-        <header>
-            <div class="cabecera">
-                <a id="logo" href="index.aspx" title="Asociacion de Comerciantes S.A.">
-                    <img src="imagenes/logotipo.png" />
-                </a>
-            </div>
-            <div class="cabecera user_search">
-                <div id="buscador">
-                    <asp:TextBox runat="server" ID="barra_search" type="search" name="busqueda" placeholder="Buscar Producto..."></asp:TextBox>
-                    <asp:Button runat="server" ID="btn_search" class="icon-search" type="submit" Text="" />
-                </div>
-                <div id="iniciarsesion">
+        <div id="iniciarsesion">
                     <%
 
                         String MenuCliente = "<a href=\"register.aspx\"><span class=\"icon-register\">Registrarse</span></a><span>|</span><a href=\"login.aspx\"><span class=\"icon-enter\">Iniciar Sesión</span></a>";
@@ -42,6 +31,17 @@
                         }
                     %>
                 </div>
+        <header>
+            <div class="cabecera">
+                <a id="logo" href="index.aspx" title="Asociacion de Comerciantes S.A.">
+                    <img src="imagenes/logotipo.png" />
+                </a>
+            </div>
+            <div class="cabecera user_search">
+                <div id="buscador">
+                    <asp:TextBox runat="server" ID="barra_search" type="search" name="busqueda" placeholder="Buscar Producto..."></asp:TextBox>
+                    <asp:Button runat="server" ID="btn_search" class="icon-search" type="submit" Text="" />
+                </div>     
             </div>
             <div class="cabecera">
                 <a class="compra" href="shopping-car.aspx">
