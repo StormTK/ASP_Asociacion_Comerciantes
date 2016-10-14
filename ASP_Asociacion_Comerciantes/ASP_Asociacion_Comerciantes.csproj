@@ -59,15 +59,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="asocomer.com\css\index.css" />
-    <Content Include="asocomer.com\css\login.css" />
+    <Content Include="asocomer.com\css\login_register.css" />
     <Content Include="asocomer.com\css\main.css" />
-    <Content Include="asocomer.com\css\register.css" />
     <Content Include="asocomer.com\imagenes\fondologin.png" />
     <Content Include="asocomer.com\imagenes\fondoregister.png" />
     <Content Include="asocomer.com\index.aspx" />
     <Content Include="asocomer.com\css\fonts\icomoon.svg" />
     <Content Include="asocomer.com\login.aspx" />
+    <Content Include="asocomer.com\logout.aspx" />
     <Content Include="asocomer.com\register.aspx" />
+    <Content Include="asocomer.com\usuario\perfil.aspx" />
     <Content Include="fallidobueno\css\login_register.css" />
     <Content Include="fallidobueno\css\perfil.css" />
     <Content Include="asocomer.com\css\fonts.css" />
@@ -100,6 +101,7 @@
     <Compile Include="asocomer.com\asocomer.Master.designer.cs">
       <DependentUpon>asocomer.Master</DependentUpon>
     </Compile>
+    <Compile Include="asocomer.com\codigo\Historial.cs" />
     <Compile Include="asocomer.com\codigo\Usuario.cs" />
     <Compile Include="asocomer.com\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -115,12 +117,33 @@
     <Compile Include="asocomer.com\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="asocomer.com\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asocomer.com\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="asocomer.com\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="asocomer.com\register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asocomer.com\usuario\perfil.aspx.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asocomer.com\usuario\perfil.aspx.designer.cs">
+      <DependentUpon>perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asocomer.com\usuario\usuario.Master.cs">
+      <DependentUpon>usuario.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asocomer.com\usuario\usuario.Master.designer.cs">
+      <DependentUpon>usuario.Master</DependentUpon>
     </Compile>
     <Compile Include="fallidobueno\AsociacionComerciantes.Master.cs">
       <DependentUpon>AsociacionComerciantes.Master</DependentUpon>
@@ -195,6 +218,7 @@
     <Content Include="asocomer.com\css\fonts\icomoon.ttf" />
     <Content Include="asocomer.com\css\fonts\icomoon.woff" />
     <Content Include="asocomer.com\asocomer.Master" />
+    <Content Include="asocomer.com\usuario\usuario.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

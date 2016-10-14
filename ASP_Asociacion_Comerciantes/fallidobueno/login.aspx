@@ -15,13 +15,13 @@
                     switch (msg)
                     {
                         case 1:
-                            Response.Write("<p class=\"error\" > <span class=\"icon-error\"> </span> Email/Password Incorrecto</p>");
+                            Response.Write("<div class=\"error\" > <p class=\"icon-error\"> </p><p> Email/Password Incorrecto</p></div>");
                             break;
                         case 2:
-                            Response.Write("<p class=\"login\" > <span class=\"icon-check-mark\"> </span>Se ha Registrado en la Aplicacion Web <br /> Inicie Sesion para Comenzar</p>");
+                            Response.Write("<div class=\"login\" > <p class=\"icon-check-mark\"> </p><p>Se ha Registrado en la Aplicacion Web <br /> Inicie Sesion para Comenzar</p></div>");
                             break;
                         case 3:
-                           Response.Write("<p class=\"advertencia\" > <span class=\"icon-peligo\"> </span>Para acceder a esta pagina necesita <br />Iniciar Sesión</p>");
+                           Response.Write("<div class=\"advertencia\" > <p class=\"icon-peligo\"></p><p> Para acceder a esta pagina necesita <br />Iniciar Sesión</p></div>");
                             break;
                     }
                 }

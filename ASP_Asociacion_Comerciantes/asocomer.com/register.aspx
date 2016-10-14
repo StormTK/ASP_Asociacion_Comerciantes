@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/asocomer.com/asocomer.Master" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="ASP_Asociacion_Comerciantes.asocomer.com.register" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="css/register.css" rel="stylesheet" />
+    <link href="css/login_register.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <section>
+    <section id="registro">
         <div class="presentacion"></div>
         <div class="formulario">
             <h2>Crear Usuario</h2>
@@ -14,26 +14,27 @@
                     switch (Error)
                     {
                         case 1:
-                            Response.Write("<p class=\"error\" > <span class=\"icon-error\"> </span> Algunos campos estan vacios.</p>");
+                            Response.Write("<div class=\"error\" > <p class=\"icon-error\"> </p><p class=\"mensaje\"> Algunos campos estan vacios.</p></div>");
                             break;
                         case 2:
-                            Response.Write("<p class=\"error\" > <span class=\"icon-error\"> </span> El E-mail ingresado ya esta registrado en la Aplicacion Web</p>");
+                            Response.Write("<div class=\"error\" > <p class=\"icon-error\"> </p><p class=\"mensaje\"> El E-mail ingresado ya esta registrado en la Aplicacion Web.</p></div>  ");
                             break;
                         case 3:
-                            Response.Write("<p class=\"error\" ><span class=\"icon-error\"> </span> La Contraseña es muy corta, debe tener al menos 8 Caracteres</p>");
+                            Response.Write("<div class=\"error\" > <p class=\"icon-error\"> </p><p class=\"mensaje\"> La Contraseña es muy corta, debe tener al menos 8 Caracteres</p></div>");
                             break;
                         case 4:
-                            Response.Write("<p class=\"error\" ><span class=\"icon-error\"> </span> La Contraseña debe tener al menos una Minuscula, una Mayuscula y un Numero</p>");
+                            Response.Write("<div class=\"error\" > <p class=\"icon-error\"> </p><p class=\"mensaje\"> La Contraseña debe tener al menos una Minuscula, una Mayuscula y un Numero</p></div>");
                             break;
                         case 5:
-                            Response.Write("<p class=\"error\" ><span class=\"icon-error\"> </span> No se Pudo Registrar el Usuario, Intentelo Nuevamente mas tarde.</p>");
+                            Response.Write("<div class=\"error\" > <p class=\"icon-error\"> </p><p class=\"mensaje\"> No se Pudo Registrar el Usuario, Intentelo Nuevamente mas tarde.</p></div>");
                             break;
                         case 6:
-                            Response.Write("<p class=\"error\" ><span class=\"icon-error\"> </span> No ingreso el registro.</p>");
+                            Response.Write("<div class=\"error\" > <p class=\"icon-error\"> </p><p class=\"mensaje\"> No ingreso el registro.</p></div>");
                             break;
                     }
                 }
             %>
+
             <p>Ingrese su E-mail:</p>
             <asp:TextBox runat="server" ID="txt_correo" CssClass="txt_formulario" value="@" MaxLength="60"></asp:TextBox>
 

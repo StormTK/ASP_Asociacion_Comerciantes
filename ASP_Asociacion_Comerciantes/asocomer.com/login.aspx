@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/asocomer.com/asocomer.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="ASP_Asociacion_Comerciantes.asocomer.com.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="css/login.css" rel="stylesheet" />
+    <link href="css/login_register.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section>
@@ -15,13 +15,13 @@
                     switch (msg)
                     {
                         case 1:
-                            Response.Write("<p class=\"error\" > <span class=\"icon-error\"> </span> Email/Password Incorrecto</p>");
+                            Response.Write("<div class=\"error\" > <p class=\"icon-error\"> </p><p class=\"mensaje\"> Email/Password Incorrecto</p></div>");
                             break;
                         case 2:
-                            Response.Write("<p class=\"login\" > <span class=\"icon-check-mark\"> </span>Se ha Registrado en la Aplicacion Web <br /> Inicie Sesion para Comenzar</p>");
+                            Response.Write("<div class=\"login\" > <p class=\"icon-check-mark\"> </p><p class=\"mensaje\"> Se ha Registrado con Exito <br /> Inicie Sesion para Comenzar</p></div>");
                             break;
                         case 3:
-                           Response.Write("<p class=\"advertencia\" > <span class=\"icon-peligo\"> </span>Para acceder a esta pagina necesita <br />Iniciar Sesión</p>");
+                           Response.Write("<div class=\"advertencia\" > <p class=\"icon-peligo\"></p><p class=\"mensaje\">  Para acceder a esta pagina necesita Iniciar Sesión</p></div>");
                             break;
                     }
                 }
