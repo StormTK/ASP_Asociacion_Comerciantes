@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="182A6F7D-8DD7-2900-45B4-23CC7A507187" name="Existencia">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>AEACB21C-6BC2-A924-1231-C1EC70F8CA03</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Cantidad" id="F50C8A88-8C9F-3C45-E2A1-23AF2ED4BDD1">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>326CC266-D080-C5EF-F9C4-8C26B870A400</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comercio_idComercio" id="398CF2A4-4C4B-D8CA-4F55-4E8142893BF0">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>0BB30BF1-DFEB-C92E-2ECD-EDA3A00D293E</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4F7297FE-3983-B47F-C96A-0F9A13948C8C" referredColumn="272CB717-0CDC-6020-56FA-DA26318BC343"/>
+</associations>
+</Column>
+<Column name="Producto_idProducto" id="502951A5-E4B6-6362-E814-634EE27210A4">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>EF313E87-5FDF-729A-7193-F777C607410B</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B0CCA00F-0F64-A7BE-A329-63E426245B4D" referredColumn="AB19BDE7-616C-0FF1-F1DC-86E8303F5130"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9218ECB-4276-6657-6F34-8BC820955D12" name="Existencia_PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>F0263025-5E3C-414E-8A02-FA664EAE444F</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="398CF2A4-4C4B-D8CA-4F55-4E8142893BF0"/>
+<colUsage columnID="502951A5-E4B6-6362-E814-634EE27210A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E09BFA05-CF46-CFFA-CE61-500B6DB7772F" name="Existencia_Comercio_FK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>F31639F6-C012-155D-62D0-6F59AFFF6014</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="398CF2A4-4C4B-D8CA-4F55-4E8142893BF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="681A47F1-FEE4-5262-FF00-8CF08E396350" name="Existencia_Producto_FK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>4D5B6EBB-FFA4-5F5F-BF41-EDB49832C989</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="502951A5-E4B6-6362-E814-634EE27210A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

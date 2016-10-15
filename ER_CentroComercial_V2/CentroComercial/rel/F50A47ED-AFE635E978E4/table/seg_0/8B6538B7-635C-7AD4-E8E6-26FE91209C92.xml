@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B6538B7-635C-7AD4-E8E6-26FE91209C92" name="ProductoCategoria">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>5517D9BB-C4F8-8FCE-C87D-9AABC03A4284</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Categoria_idCategoria" id="C01B0506-EB57-A598-E0A2-6CEF2DB6382E">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>13E336E7-DB81-53F0-EC14-82AE9C118333</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1C76535-DED5-5A61-A92F-962570EFD0CC" referredColumn="71DF343F-5A05-3D2C-D9BC-3713A862D36C"/>
+</associations>
+</Column>
+<Column name="Producto_idProducto" id="36698DD3-AF73-D0F1-0746-49B847604877">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>6FA155FA-F539-2A4C-949F-D8E8E82E1B0B</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A22DA602-B6C7-E140-9F6C-6FCCE86E9787" referredColumn="AB19BDE7-616C-0FF1-F1DC-86E8303F5130"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09406D90-EE40-DBB1-5C62-C4F2ED5CF2CB" name="ProductoCategoria_PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>9BCFD900-9A99-8285-453D-10A216BF3851</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C01B0506-EB57-A598-E0A2-6CEF2DB6382E"/>
+<colUsage columnID="36698DD3-AF73-D0F1-0746-49B847604877"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF81D558-E234-95CB-ADDE-AC1D95DDBB56" name="ProductoCategoria_Categoria_FK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>9B338F9D-8234-9E52-8CBD-685504ECE365</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C01B0506-EB57-A598-E0A2-6CEF2DB6382E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="334EB8DE-49D1-01D2-B1C5-7CEA7FC88B96" name="ProductoCategoria_Producto_FK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>15EC5FA1-E00D-5B85-9147-FE495692B39A</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36698DD3-AF73-D0F1-0746-49B847604877"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

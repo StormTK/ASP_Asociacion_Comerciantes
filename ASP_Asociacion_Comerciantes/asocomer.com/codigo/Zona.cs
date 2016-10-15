@@ -14,7 +14,7 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
 
         public Boolean RegistrarZona(int idZona, String Nombre)
         {
-            String stg_sql = "INSERT INTO idZona(idZona, nombre) Values(@idZona, @nombre)";
+            String stg_sql = "INSERT INTO Zona(idZona, nombre) Values(@idZona, @nombre)";
             try
             {
                 Conexion.Open();

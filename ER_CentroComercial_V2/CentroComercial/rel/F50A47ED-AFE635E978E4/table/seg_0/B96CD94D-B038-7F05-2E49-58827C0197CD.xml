@@ -1,0 +1,184 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B96CD94D-B038-7F05-2E49-58827C0197CD" name="Usuario">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>BC109229-BF86-3E6C-4529-B8F7A5A9F4C7</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idUsuario" id="F886DC3B-06D9-BBE0-223F-96C8CD428FE9">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>DFFB953C-295E-7575-9F0A-ED7D15CA8DA7</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario" id="D6A635B7-0250-9161-E834-93FECFDDB22C">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>28B53FE5-288A-C3D4-375C-D054EBC993A3</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contraseña" id="25FACE60-8F9D-C877-2ECC-7C5F654E155F">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>F6D5CC88-867C-07BA-12F2-97E78142C030</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18 CHAR</dataTypeSize>
+<ownDataTypeParameters>18 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="A93D5D3E-4C81-87C9-5F4F-617395BDD3F7">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>218A4801-D23C-CA70-4393-33B93713C045</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="24D8C3B4-8624-6D41-50FC-BE837FD3603F">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>171AFF73-409D-032D-1805-E10224F2A175</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sexo" id="3A1CE694-019B-34EA-443E-105CF0E75493">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>3DCEE384-DB78-F14D-050D-3E9E7DD92FC3</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rol" id="6D966518-3E70-B0A6-6A0F-20878936673D">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>182A67AF-E6AB-6C7A-0AE3-704F2D6FA457</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="DA1F434D-376E-6C73-C3F8-07CE95C77479">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>91583241-727D-D9B8-052E-0844FD729A86</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="noCuenta" id="A8BB347E-4835-6ED0-1A8E-F6D9AE83341E">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>72BECA63-280E-6A9D-42BF-12D447C202DA</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="noTarjeta" id="501CC14B-425C-D8A5-EFAD-3986B3364F8D">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>0325A1BD-3075-21F3-79B6-598BF555AE69</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="9B8F65EF-8211-CE26-AE5E-B83E2E3600D3">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>D278F3C9-CEEB-D8DD-5940-939C8FE2AC60</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zona_idZona" id="B7823433-2AB9-E000-4249-28514C313D23">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>92D419F5-4447-98F6-24AE-2A86BC52087A</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9744459D-DF5B-12CE-0860-C787C873DBD3" referredColumn="2855C135-01E5-8FCB-012C-F55F7380E43E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E033C784-48F9-B21D-FEBF-454A15373D43" name="Usuario_PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>B4D344F3-4FA1-9746-9CBF-21ACE8B0FA10</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F886DC3B-06D9-BBE0-223F-96C8CD428FE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F815200A-6AEC-C27A-F56D-FDA8B1F7B458" name="Usuario_Zona_FK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>9573E3A8-22C7-4615-C78D-A20068C3A1E3</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7823433-2AB9-E000-4249-28514C313D23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

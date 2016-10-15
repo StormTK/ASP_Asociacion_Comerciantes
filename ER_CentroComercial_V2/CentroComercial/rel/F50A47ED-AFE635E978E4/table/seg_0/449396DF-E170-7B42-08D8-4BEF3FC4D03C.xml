@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="449396DF-E170-7B42-08D8-4BEF3FC4D03C" name="Comercio">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>CD4C9C91-02A3-E3F1-C721-CC004C8D3535</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idComercio" id="272CB717-0CDC-6020-56FA-DA26318BC343">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>A1D43B7F-3B9D-0449-CF14-DDCDB0832E7A</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="C5A66821-BCBE-AD29-23F7-0CC3ADAF155E">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>29F0809E-3061-4645-1A82-A4AB10C03706</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Siglas" id="640D6F80-A785-B512-B644-BC60270A8288">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>2316DC47-A038-0A7F-C9B8-D2E485F67EE7</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="C62B9512-0524-66A2-A966-0B5AE4667B5F">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>9090BE11-636B-89C6-41DE-5EF922A05812</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="2AF4527E-1DC3-CD08-2A94-62896F7D3F4D">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>AA276B7B-546D-1EAF-62E5-AA0967D1E449</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fax" id="B22F6CE7-D996-0650-C0B7-ED809F18A1BF">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>BFDF032A-5AEC-F585-B88E-509D2D99C3AD</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="0B585937-98E7-6CE3-3B57-EE197242AC7D">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>384F98B2-5136-6F80-75D2-7F3979A6BC52</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="821EF774-6EFC-DC20-96AF-0B78E638A9E6">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>7D7AB157-9A90-136D-54CD-B638A026A5C4</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario_idUsuario" id="BA1D73B6-ECD9-14D9-1397-984DAEAAE10D">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>16565E26-48BA-9002-2AD9-83D015EFC1C5</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="072E5E19-B94E-E3E1-78F2-FDD9889CA087" referredColumn="F886DC3B-06D9-BBE0-223F-96C8CD428FE9"/>
+</associations>
+</Column>
+<Column name="Zona_idZona" id="BDF381D8-C0C8-A16D-AB16-B8AB9C5E947C">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>59BAD2FB-A802-CB9A-D120-D4BE351A21AC</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="721D5DE0-54D1-DFBB-0924-DAA5BBE477CF" referredColumn="2855C135-01E5-8FCB-012C-F55F7380E43E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1DEA02E9-DD90-B5AF-C2BD-75C806EBA5F0" name="Comercio_PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>2F556036-C559-0579-5077-B885C05FC9CF</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="272CB717-0CDC-6020-56FA-DA26318BC343"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1573E6E-CC31-C2AE-8D2F-28A3BF356C9B" name="Comercio_Zona_FK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>39F40D00-B2C6-0383-0C50-447BCB5B500E</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDF381D8-C0C8-A16D-AB16-B8AB9C5E947C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FBCB478-C9A9-21BE-DB03-64E4C9E79D15" name="Comercio_Usuario_FK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>CD61475B-3067-57BB-0D07-A3FABA7D95EF</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA1D73B6-ECD9-14D9-1397-984DAEAAE10D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

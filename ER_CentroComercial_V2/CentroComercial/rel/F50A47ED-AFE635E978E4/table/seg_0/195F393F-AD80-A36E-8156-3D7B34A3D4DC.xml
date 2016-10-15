@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="195F393F-AD80-A36E-8156-3D7B34A3D4DC" name="ZonasVecinas">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>F15C0750-FE63-6A69-A787-F77C6CAF4A6A</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Zona_idZona2" id="EEBAD613-8CAA-86BD-0823-CDBACFFD9421">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>B4110793-987E-7525-B837-9DCFC4E595A5</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="247C0569-E892-F36A-68D1-99610A18678A" referredColumn="2855C135-01E5-8FCB-012C-F55F7380E43E"/>
+</associations>
+</Column>
+<Column name="Zona_idZona" id="56B7EB59-6B7B-9A1A-FFDB-52BEAC818120">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>37AB300A-9AA6-80A9-3584-E6AED2542D5E</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E08B8545-7499-7B12-A2CB-208AB9D61179" referredColumn="2855C135-01E5-8FCB-012C-F55F7380E43E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D9E0E99-3B9A-39B0-CB99-3CF7F418170F" name="ZonasVecinas_PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>C57E66EC-3D1C-50D5-72DF-DD8546664A36</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56B7EB59-6B7B-9A1A-FFDB-52BEAC818120"/>
+<colUsage columnID="EEBAD613-8CAA-86BD-0823-CDBACFFD9421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BAA53F0-9DE3-0BC5-D625-6A3EFB4F3723" name="ZonasVecinas_Zona_FK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>784F52ED-ECC0-4A48-1230-6D3E24110F9E</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56B7EB59-6B7B-9A1A-FFDB-52BEAC818120"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CE1F51E-5DBF-607F-7596-F8486290B12C" name="ZonasVecinas_Zona_FKv2">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:10:38 UTC</createdTime>
+<generatorID>35623A19-4277-10B9-7110-FD2FE5708CB7</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEBAD613-8CAA-86BD-0823-CDBACFFD9421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -55,7 +55,8 @@ INSERT INTO Historial(idHistorial, idusuario, descrip) Values(1,1,'Se Registro e
 
 Select * from Usuario;
 Select * from Historial
+Select * from Zona
 
 Select MAX(idHistorial) from Historial WHERE idusuario = 1
-
+ delete from Zona where idZona < 14
 /*INTO UPDATE Historial SET descrip = "Se Registro en la Aplicación Web" where idusuario = 1*/

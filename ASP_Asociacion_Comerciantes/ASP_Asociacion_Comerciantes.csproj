@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="asocomer.com\administracion\panel.aspx" />
-    <Content Include="asocomer.com\administracion\Zona\agregar.aspx" />
+    <Content Include="asocomer.com\administracion\zona\agregar.aspx" />
     <Content Include="asocomer.com\css\admin.css" />
     <Content Include="asocomer.com\css\index.css" />
     <Content Include="asocomer.com\css\login_register.css" />
@@ -112,11 +112,11 @@
     <Compile Include="asocomer.com\administracion\panel.aspx.designer.cs">
       <DependentUpon>panel.aspx</DependentUpon>
     </Compile>
-    <Compile Include="asocomer.com\administracion\Zona\agregar.aspx.cs">
+    <Compile Include="asocomer.com\administracion\zona\agregar.aspx.cs">
       <DependentUpon>agregar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="asocomer.com\administracion\Zona\agregar.aspx.designer.cs">
+    <Compile Include="asocomer.com\administracion\zona\agregar.aspx.designer.cs">
       <DependentUpon>agregar.aspx</DependentUpon>
     </Compile>
     <Compile Include="asocomer.com\asocomer.Master.cs">
@@ -253,7 +253,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="asocomer.com\administracion\zona\temp\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

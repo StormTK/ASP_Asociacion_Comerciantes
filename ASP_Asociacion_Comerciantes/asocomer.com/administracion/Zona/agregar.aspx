@@ -15,5 +15,6 @@
     <p>Suba un Archivo .xml para registar las zonas o zonas vecinas en la aplicacion Web</p>
     <asp:FileUpload CssClass="ArchivoZona" ID="ArchivoZona" runat="server"  />
     <br />
+   
     <asp:Button CssClass="RegistrarZona" Text="Registrar Archivo" ID="RegistrarZona" runat="server" OnClick="RegistrarZona_Click"  />
 </asp:Content>
