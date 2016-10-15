@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AEACB21C-6BC2-A924-1231-C1EC70F8CA03" name="Existencia">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:01:22 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cantidad" id="326CC266-D080-C5EF-F9C4-8C26B870A400">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:01:31 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idComercio" id="0BB30BF1-DFEB-C92E-2ECD-EDA3A00D293E">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:02:09 UTC</createdTime>
+<generatorID>F31639F6-C012-155D-62D0-6F59AFFF6014</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<referedAttribute>A1D43B7F-3B9D-0449-CF14-DDCDB0832E7A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idProducto" id="EF313E87-5FDF-729A-7193-F777C607410B">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:02:15 UTC</createdTime>
+<generatorID>4D5B6EBB-FFA4-5F5F-BF41-EDB49832C989</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<referedAttribute>A246A376-4EDF-B421-3224-229C8FFC55F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F0263025-5E3C-414E-8A02-FA664EAE444F" name="Existencia PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:02:22 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0BB30BF1-DFEB-C92E-2ECD-EDA3A00D293E</attributeRef>
+<attributeRef>EF313E87-5FDF-729A-7193-F777C607410B</attributeRef>
+<attributeRef>0BB30BF1-DFEB-C92E-2ECD-EDA3A00D293E</attributeRef>
+<attributeRef>EF313E87-5FDF-729A-7193-F777C607410B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

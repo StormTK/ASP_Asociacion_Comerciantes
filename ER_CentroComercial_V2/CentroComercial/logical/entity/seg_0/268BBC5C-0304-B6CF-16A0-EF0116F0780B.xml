@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="268BBC5C-0304-B6CF-16A0-EF0116F0780B" name="Historial">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 14:22:32 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idHistorial" id="E1E202D2-9DA8-2F39-02AF-C45004D17707">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 14:22:45 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="0B73145F-704C-BF59-144A-D4EB2C7C38CC">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 14:22:58 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="C306266D-629A-9DDB-43AE-0CDF297AFAA8">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 14:23:44 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idUsuario" id="92B3E3C5-D3CB-AD73-9F09-C3ADF0C5A125">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 14:24:15 UTC</createdTime>
+<generatorID>3D00523F-415C-A115-C4C9-59D90607B088</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<referedAttribute>DFFB953C-295E-7575-9F0A-ED7D15CA8DA7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="015C4718-B29C-B0EA-0644-3942503A416A" name="Historial PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 14:22:54 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E1E202D2-9DA8-2F39-02AF-C45004D17707</attributeRef>
+<attributeRef>F26F3D47-C0F2-431A-9DD6-E9190AE976F6</attributeRef>
+<attributeRef>92B3E3C5-D3CB-AD73-9F09-C3ADF0C5A125</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

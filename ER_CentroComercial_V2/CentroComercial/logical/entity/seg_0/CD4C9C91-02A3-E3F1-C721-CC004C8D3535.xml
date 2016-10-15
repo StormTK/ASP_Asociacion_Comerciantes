@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BC109229-BF86-3E6C-4529-B8F7A5A9F4C7" name="Usuario">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CD4C9C91-02A3-E3F1-C721-CC004C8D3535" name="Comercio">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:17:02 UTC</createdTime>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <engineerTo>
 <item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="idUsuario" id="DFFB953C-295E-7575-9F0A-ED7D15CA8DA7">
+<Attribute name="idComercio" id="A1D43B7F-3B9D-0449-CF14-DDCDB0832E7A">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:17:10 UTC</createdTime>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <engineerTo>
 <item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
@@ -27,9 +27,35 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Usuario" id="28B53FE5-288A-C3D4-375C-D054EBC993A3">
+<Attribute name="Nombre" id="29F0809E-3061-4645-1A82-A4AB10C03706">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:17:29 UTC</createdTime>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60 CHAR</dataTypeSize>
+<ownDataTypeParameters>60 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Siglas" id="2316DC47-A038-0A7F-C9B8-D2E485F67EE7">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="9090BE11-636B-89C6-41DE-5EF922A05812">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <engineerTo>
 <item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
@@ -40,22 +66,9 @@
 <dataTypeSize>30 CHAR</dataTypeSize>
 <ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Contraseña" id="F6D5CC88-867C-07BA-12F2-97E78142C030">
+<Attribute name="Email" id="AA276B7B-546D-1EAF-62E5-AA0967D1E449">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:17:58 UTC</createdTime>
-<ownerDesignName>CentroComercial</ownerDesignName>
-<engineerTo>
-<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>18 CHAR</dataTypeSize>
-<ownDataTypeParameters>18 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Nombre" id="218A4801-D23C-CA70-4393-33B93713C045">
-<createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:18:58 UTC</createdTime>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <engineerTo>
 <item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
@@ -66,47 +79,23 @@
 <dataTypeSize>30 CHAR</dataTypeSize>
 <ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Apellido" id="171AFF73-409D-032D-1805-E10224F2A175">
+<Attribute name="Fax" id="BFDF032A-5AEC-F585-B88E-509D2D99C3AD">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:19:01 UTC</createdTime>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <engineerTo>
 <item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30 CHAR</dataTypeSize>
 <ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="sexo" id="3DCEE384-DB78-F14D-050D-3E9E7DD92FC3">
+<Attribute name="Telefono" id="384F98B2-5136-6F80-75D2-7F3979A6BC52">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-15 14:20:57 UTC</createdTime>
-<ownerDesignName>CentroComercial</ownerDesignName>
-<engineerTo>
-<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1 BYTE</dataTypeSize>
-<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="rol" id="182A67AF-E6AB-6C7A-0AE3-704F2D6FA457">
-<createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 19:25:19 UTC</createdTime>
-<ownerDesignName>CentroComercial</ownerDesignName>
-<engineerTo>
-<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Telefono" id="91583241-727D-D9B8-052E-0844FD729A86">
-<createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:19:08 UTC</createdTime>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <engineerTo>
 <item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
@@ -118,37 +107,9 @@
 <dataTypeSize>8 CHAR</dataTypeSize>
 <ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="noCuenta" id="72BECA63-280E-6A9D-42BF-12D447C202DA">
+<Attribute name="estado" id="7D7AB157-9A90-136D-54CD-B638A026A5C4">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:19:22 UTC</createdTime>
-<ownerDesignName>CentroComercial</ownerDesignName>
-<engineerTo>
-<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>12 CHAR</dataTypeSize>
-<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="noTarjeta" id="0325A1BD-3075-21F3-79B6-598BF555AE69">
-<createdBy>StormTK</createdBy>
-<createdTime>2016-10-15 14:21:56 UTC</createdTime>
-<ownerDesignName>CentroComercial</ownerDesignName>
-<engineerTo>
-<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>12 CHAR</dataTypeSize>
-<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="estado" id="D278F3C9-CEEB-D8DD-5940-939C8FE2AC60">
-<createdBy>StormTK</createdBy>
-<createdTime>2016-10-15 14:21:42 UTC</createdTime>
+<createdTime>2016-10-15 14:32:16 UTC</createdTime>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <engineerTo>
 <item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
@@ -158,10 +119,24 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idZona" id="92D419F5-4447-98F6-24AE-2A86BC52087A">
+<Attribute name="idUsuario" id="16565E26-48BA-9002-2AD9-83D015EFC1C5">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-15 16:08:56 UTC</createdTime>
-<generatorID>9573E3A8-22C7-4615-C78D-A20068C3A1E3</generatorID>
+<createdTime>2016-10-15 14:29:29 UTC</createdTime>
+<generatorID>CD61475B-3067-57BB-0D07-A3FABA7D95EF</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<referedAttribute>DFFB953C-295E-7575-9F0A-ED7D15CA8DA7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idZona" id="59BAD2FB-A802-CB9A-D120-D4BE351A21AC">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:09:15 UTC</createdTime>
+<generatorID>39F40D00-B2C6-0383-0C50-447BCB5B500E</generatorID>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <engineerTo>
 <item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
@@ -174,9 +149,9 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="B4D344F3-4FA1-9746-9CBF-21ACE8B0FA10" name="Usuario PK">
+<identifier id="2F556036-C559-0579-5077-B885C05FC9CF" name="Entity_3 PK">
 <createdBy>StormTK</createdBy>
-<createdTime>2016-10-03 18:17:27 UTC</createdTime>
+<createdTime>2016-10-15 14:28:26 UTC</createdTime>
 <ownerDesignName>CentroComercial</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -184,7 +159,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>DFFB953C-295E-7575-9F0A-ED7D15CA8DA7</attributeRef>
+<attributeRef>A1D43B7F-3B9D-0449-CF14-DDCDB0832E7A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

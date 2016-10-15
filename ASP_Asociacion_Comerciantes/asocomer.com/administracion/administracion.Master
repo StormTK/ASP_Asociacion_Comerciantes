@@ -16,13 +16,29 @@
     <form id="administracion" runat="server">
         <section>
             <div class="menu_admin">
-                <a>
-                    <p class="icon-usuario"></p>
+                <a href="../index.aspx">
+                    <p class="icon-home3 icono"></p>
+                    <p>AsoComer</p>
+                </a>
+                <a href="#">
+                    <p class="icon-usuario icono"></p>
                     <p>Gestionar Usuario</p>
                 </a>
-                <a>
-                    <p class="icon-register"></p>
+                <a href="#">
+                    <p class="icon-register icono"></p>
                     <p>Gestionar Solicitudes de Comercio</p>
+                </a>
+                <a href="#">
+                    <p class="icon-briefcase icono"></p>
+                    <p>Gestionar Comercio</p>
+                </a>
+                <a href="#">
+                    <p class="icon-cart icono"></p>
+                    <p>Gestionar Producto</p>
+                </a>
+                <a href="Zona/agregar.aspx">
+                    <p class="icon-truck icono"></p>
+                    <p>Gestionar Distribucion</p>
                 </a>
             </div>
             <div class="contenido_admin">

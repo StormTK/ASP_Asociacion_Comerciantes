@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="348C047A-4A38-D793-0F50-3D1C2D47119A" name="Zona">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:03:51 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idZona" id="F4909FC3-9F90-8A85-B968-60A60B79280D">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:04:00 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="8301F696-16EB-8E9C-3E12-CAE0BFDBC946">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:04:15 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idZonaSuperior" id="4E289A31-9455-A292-EF27-61C27D56A406">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:04:55 UTC</createdTime>
+<generatorID>2C2A4E39-CA0A-1749-AFFD-DFC8C3947BC2</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F4909FC3-9F90-8A85-B968-60A60B79280D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6226144D-B1CF-E3F1-CC52-DE459E678038" name="Zona PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:04:14 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F4909FC3-9F90-8A85-B968-60A60B79280D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

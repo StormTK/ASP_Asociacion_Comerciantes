@@ -58,11 +58,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="asocomer.com\administracion\main.aspx" />
+    <Content Include="asocomer.com\administracion\panel.aspx" />
+    <Content Include="asocomer.com\administracion\Zona\agregar.aspx" />
     <Content Include="asocomer.com\css\admin.css" />
     <Content Include="asocomer.com\css\index.css" />
     <Content Include="asocomer.com\css\login_register.css" />
     <Content Include="asocomer.com\css\main.css" />
+    <Content Include="asocomer.com\css\zona.css" />
     <Content Include="asocomer.com\imagenes\fondologin.png" />
     <Content Include="asocomer.com\imagenes\fondoregister.png" />
     <Content Include="asocomer.com\index.aspx" />
@@ -103,12 +105,19 @@
     <Compile Include="asocomer.com\administracion\administracion.Master.designer.cs">
       <DependentUpon>administracion.Master</DependentUpon>
     </Compile>
-    <Compile Include="asocomer.com\administracion\main.aspx.cs">
-      <DependentUpon>main.aspx</DependentUpon>
+    <Compile Include="asocomer.com\administracion\panel.aspx.cs">
+      <DependentUpon>panel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="asocomer.com\administracion\main.aspx.designer.cs">
-      <DependentUpon>main.aspx</DependentUpon>
+    <Compile Include="asocomer.com\administracion\panel.aspx.designer.cs">
+      <DependentUpon>panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asocomer.com\administracion\Zona\agregar.aspx.cs">
+      <DependentUpon>agregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asocomer.com\administracion\Zona\agregar.aspx.designer.cs">
+      <DependentUpon>agregar.aspx</DependentUpon>
     </Compile>
     <Compile Include="asocomer.com\asocomer.Master.cs">
       <DependentUpon>asocomer.Master</DependentUpon>
@@ -119,6 +128,7 @@
     </Compile>
     <Compile Include="asocomer.com\codigo\Historial.cs" />
     <Compile Include="asocomer.com\codigo\Usuario.cs" />
+    <Compile Include="asocomer.com\codigo\Zona.cs" />
     <Compile Include="asocomer.com\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

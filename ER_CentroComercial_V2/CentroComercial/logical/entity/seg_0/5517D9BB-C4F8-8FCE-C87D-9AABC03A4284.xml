@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5517D9BB-C4F8-8FCE-C87D-9AABC03A4284" name="ProductoCategoria">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 15:59:52 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idCategoria" id="13E336E7-DB81-53F0-EC14-82AE9C118333">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:00:40 UTC</createdTime>
+<generatorID>9B338F9D-8234-9E52-8CBD-685504ECE365</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<referedAttribute>52A46B24-DF93-06D8-E889-3DD80182EFDC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idProducto" id="6FA155FA-F539-2A4C-949F-D8E8E82E1B0B">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:00:48 UTC</createdTime>
+<generatorID>15EC5FA1-E00D-5B85-9147-FE495692B39A</generatorID>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="true"/>
+</engineerTo>
+<referedAttribute>A246A376-4EDF-B421-3224-229C8FFC55F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9BCFD900-9A99-8285-453D-10A216BF3851" name="ProductoCategoria PK">
+<createdBy>StormTK</createdBy>
+<createdTime>2016-10-15 16:00:59 UTC</createdTime>
+<ownerDesignName>CentroComercial</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F50A47ED-5945-3EFD-6AB1-AFE635E978E4" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>13E336E7-DB81-53F0-EC14-82AE9C118333</attributeRef>
+<attributeRef>6FA155FA-F539-2A4C-949F-D8E8E82E1B0B</attributeRef>
+<attributeRef>13E336E7-DB81-53F0-EC14-82AE9C118333</attributeRef>
+<attributeRef>6FA155FA-F539-2A4C-949F-D8E8E82E1B0B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
