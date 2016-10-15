@@ -1,0 +1,38 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+    height: 1%;
+}
+
+    section .menu_admin,
+    section .contenido_admin {
+        float: left;
+        min-height: 600px;
+    }
+
+    section .menu_admin {
+        width: 100px;
+        text-align: center;
+        background: #0a0909;
+        color: #ffffff;
+    }
+
+        section .menu_admin a {
+            width: 100px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        section .menu_admin a .icon-usuario,
+         section .menu_admin a .icon-register{
+            font-size: 30px;
+        }
+
+        section .menu_admin a p{
+            padding: 5px 5px;
+        }

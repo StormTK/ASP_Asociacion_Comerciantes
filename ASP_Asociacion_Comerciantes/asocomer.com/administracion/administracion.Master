@@ -6,15 +6,30 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>AsoComer - Administracion</title>
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/fonts.css" rel="stylesheet" />
+    <link href="../css/admin.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="administracion" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+        <section>
+            <div class="menu_admin">
+                <a>
+                    <p class="icon-usuario"></p>
+                    <p>Gestionar Usuario</p>
+                </a>
+                <a>
+                    <p class="icon-register"></p>
+                    <p>Gestionar Solicitudes de Comercio</p>
+                </a>
+            </div>
+            <div class="contenido_admin">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </section>
     </form>
 </body>
 </html>
