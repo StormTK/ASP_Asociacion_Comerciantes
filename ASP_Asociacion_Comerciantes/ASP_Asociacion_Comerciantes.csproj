@@ -61,6 +61,7 @@
     <Content Include="asocomer.com\administracion\panel.aspx" />
     <Content Include="asocomer.com\administracion\zona\agregar.aspx" />
     <Content Include="asocomer.com\css\admin.css" />
+    <Content Include="asocomer.com\css\usuario.css" />
     <Content Include="asocomer.com\css\index.css" />
     <Content Include="asocomer.com\css\login_register.css" />
     <Content Include="asocomer.com\css\main.css" />

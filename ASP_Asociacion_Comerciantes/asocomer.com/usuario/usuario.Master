@@ -9,6 +9,7 @@
     <link href="../css/fonts.css" rel="stylesheet" />
     <link href="../css/normalize.css" rel="stylesheet" />
     <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/usuario.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -16,7 +17,7 @@
     <form id="usuarioasocomer" runat="server">
         <header>
             <div class="cabecera">
-                <a id="logo" href="index.aspx" title="Asociacion de Comerciantes S.A.">
+                <a id="logo" href="../index.aspx" title="Asociacion de Comerciantes S.A.">
                     <p></p>
                 </a>
             </div>
@@ -37,7 +38,7 @@
                         else
                         {
                             String[] usuario = (String[])Session["Usuario"];
-                            String Socio = "<a href=\"logout.aspx\"><span class=\"icon-exit\">Cerrar Sesión</span></a> </span></a><span>|</span><a href=\"perfil.aspx?id=" + usuario[0] +" \"><span class=\"icon-usuario\">" + usuario[2] + " " + usuario[3] +"</span></a>";
+                            String Socio = "<a href=\"logout.aspx\"><span class=\"icon-exit\">Cerrar Sesión</span></a> </span></a><span>|</span><a href=\"usuario\\perfil.aspx?id=" + usuario[0] + " \"><span class=\"icon-usuario\">" + usuario[2] + " " + usuario[3] + "</span></a>";
                             Response.Write(Socio);
                         }
                     %>
@@ -52,9 +53,25 @@
                 </a>
             </div>
         </header>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+        <div class="contenido_global">
+            <div class="panel_perfil">
+                <%
+                    if (Session["Usuario"] == null)
+                    {
+                        
+                    }
+                    else
+                    {
+                        String[] usuario = (String[])Session["Usuario"];
+                        int idUsuario = Convert.ToInt32(usuario[0]);
+                        Response.Write(getPerfil(idUsuario));
+                    }
+                %>
+            </div>
+            <div class="info_perfil">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
         </div>
         <footer>
             <div class="footer_inicio">

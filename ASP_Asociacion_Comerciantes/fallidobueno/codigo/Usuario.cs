@@ -165,7 +165,7 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
                 String sexo = resultado["sexo"].ToString();
                 String telefono = (resultado["telefono"].ToString());
 
-                String html = "<div class=\"cabecerausuario\"><div class=\"perfil\">";
+                String html = "";
                 if (sexo.Equals("1") || sexo.Equals("true") || sexo.Equals("True"))
                 {
                     html += "<p class=\"icon-hombre2\"></p>";
@@ -174,6 +174,7 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
                 {
                     html += "<p class=\"icon-mujer2\"></p>";
                 }
+
                 html += " <h2 class=\"nombre\">" + nombre + " " + apellido + "</h2>";
                 switch (rol)
                 {
@@ -196,7 +197,7 @@ namespace ASP_Asociacion_Comerciantes.AsociacionComerciantes.com.codigo
                         html += "<h3 class=\"nombre\">Socio</h3>";
                         break;
                 }
-                html += "</div ><div class=\"informacionUsuario\">";
+
 
                 if (idusuario == idusuariovisitante)
                 {

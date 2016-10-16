@@ -1,0 +1,26 @@
+﻿.contenido_global{
+    background: #d7d3d3;
+    width: 100%;
+}
+
+.contenido_global .panel_perfil,
+.contenido_global .info_perfil {
+    background: rgba(250,250,250,0.4);
+    margin: 10px 10px; 
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contenido_global .panel_perfil{
+    width: 200px;
+}
+
+.contenido_global .panel_perfil{
+    
+}
+
+.contenido_global .info_perfil {
+    width: calc(100% - 350px);
+}

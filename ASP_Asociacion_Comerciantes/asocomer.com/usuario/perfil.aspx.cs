@@ -9,6 +9,8 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.usuario
 {
     public partial class perfil : System.Web.UI.Page
     {
-        
+       
+
+
     }
 }

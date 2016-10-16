@@ -9,21 +9,16 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.usuario
 {
     public partial class usuario : System.Web.UI.MasterPage
     {
-        String[] DatosUsuario;
+        codigo.Usuario MostrarUsuario = new codigo.Usuario();
         protected void Page_Load(object sender, EventArgs e)
         {
 
             
         }
 
-        public void setNombreUsurio()
+        public String getPerfil(int idUsuario)
         {
-            DatosUsuario = (String[])Session["Usuario"];
-        }
-
-        public String getNombreUsuario()
-        {
-            return DatosUsuario[2];
+            return MostrarUsuario.MostrarPerfil(idUsuario);
         }
     }
 }

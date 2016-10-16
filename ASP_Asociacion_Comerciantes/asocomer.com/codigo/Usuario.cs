@@ -37,7 +37,7 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
 
         public int BuscaridUsuario(String Email)
         {
-            String stg_sql = "Select idUsuario from Usuario WHERE correo = @Email";
+            String stg_sql = "SELECT idUsuario FROM Usuario WHERE correo = @Email";
             try
             {
                 Conexion.Open();
@@ -55,6 +55,64 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
                 MensajeError += DetalleError.Message;
             }
             return 0;
+        }
+
+        public String MostrarPerfil(int idUsuario)
+        {
+            String stg_sql = "SELECT nombre, apellido, rol, sexo FROM Usuario WHERE idUsuario = @idUsuario";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                SqlDataReader resultado = cmd.ExecuteReader();
+                resultado.Read();
+                String nombre = resultado["nombre"].ToString();
+                String apellido = resultado["apellido"].ToString();
+                int rol = Convert.ToInt32(resultado["rol"].ToString());
+                String sexo = resultado["sexo"].ToString();
+                Conexion.Close();
+
+                String HTML_Perfil = "";
+                if (sexo.Equals("1") || sexo.Equals("true") || sexo.Equals("True"))
+                {
+                    HTML_Perfil += "<p class=\"icon-hombre\"></p>";
+                }
+                if (sexo.Equals("0") || sexo.Equals("false") || sexo.Equals("False"))
+                {
+                    HTML_Perfil += "<p class=\"icon-mujer\"></p>";
+                }
+                HTML_Perfil += " <h2 class=\"nombre\">" + nombre + " " + apellido + "</h2>";
+                switch (rol)
+                {
+                    case 1:
+                        HTML_Perfil += "<h3 class=\"nombre\">Administrador</h3>";
+                        break;
+                    case 2:
+                        HTML_Perfil += "<h3 class=\"nombre\">Gerente</h3>";
+                        break;
+                    case 3:
+                        HTML_Perfil += "<h3 class=\"nombre\">Responsable de Abastecimiento</h3>";
+                        break;
+                    case 4:
+                        HTML_Perfil += "<h3 class=\"nombre\">Operario</h3>";
+                        break;
+                    case 5:
+                        HTML_Perfil += "<h3 class=\"nombre\">Asociado</h3>";
+                        break;
+                    case 6:
+                        HTML_Perfil += "<h3 class=\"nombre\">Socio</h3>";
+                        break;
+                }
+
+                return HTML_Perfil;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return "Error 404 - No se encontro Perfil";
         }
 
         public String[] SesionUsuario(String Email)
