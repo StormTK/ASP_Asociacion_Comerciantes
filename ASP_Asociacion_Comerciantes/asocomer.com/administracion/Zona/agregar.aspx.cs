@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -23,49 +24,40 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.administracion.Zona
             int idzona_int = 0;
             int idzonas_int = 0;
             XmlDocument DocumentoZona = new XmlDocument();
-            DocumentoZona.Load(Ruta);
-            XmlNodeList categorias = DocumentoZona.GetElementsByTagName("ZONAS");
-            XmlNodeList lista = ((XmlElement)categorias[0]).GetElementsByTagName("ZONA");
-            
-            foreach (XmlElement nodo in lista)
+            if (File.Exists(Ruta) == true)
             {
-                int i = 0;
-                XmlNodeList idzona = nodo.GetElementsByTagName("no_zona");
-                XmlNodeList nombre = nodo.GetElementsByTagName("nombre_zona");
-                XmlNodeList zonasuperior = nodo.GetElementsByTagName("ZONA_no_zona_superior");
-                try
+                DocumentoZona.Load(Ruta);
+
+                XmlNodeList categorias = DocumentoZona.GetElementsByTagName("ZONAS");
+                XmlNodeList lista = ((XmlElement)categorias[0]).GetElementsByTagName("ZONA");
+
+                foreach (XmlElement nodo in lista)
                 {
-                    if (idzona != null)
+                    int i = 0;
+
+                    XmlNodeList idzona = nodo.GetElementsByTagName("no_zona");
+                    XmlNodeList nombre = nodo.GetElementsByTagName("nombre_zona");
+                    XmlNodeList zonasuperior = nodo.GetElementsByTagName("ZONA_no_zona_superior");
+
+                    try
                     {
                         idzona_int = Convert.ToInt32(idzona[i].InnerText);
-                    }
-                    if (nombre != null)
-                    {
-                        //idzona_int = Convert.ToInt32(idzona.ToString());
-                    }
-                    if (zonasuperior.Count > 0)
-                    {
                         idzonas_int = Convert.ToInt32(zonasuperior[i].InnerText);
                         RegistrarZonas.RegistrarZona(idzona_int, nombre[i].InnerText, idzonas_int);
-                    }
-                    else
-                    {
-                        RegistrarZonas.RegistrarZona(idzona_int, nombre[i].InnerText);
-                    }
-                }catch(Exception error)
-                {
-                    Response.Write("Ocurrio un Error:" + error);
-                }
-                //aqui iria la insercion a la base de datos
-                i++;
-            }
-            System.IO.File.Delete(@Ruta);
-            Response.Write("Se Agregaron las Zonas Con Exito");
-        }
-        /*
-        
-        */
 
+                    }
+                    catch (NullReferenceException error)
+                    {
+                        Response.Write("Ocurrio un Error:" + error);
+                    }
+                    //aqui iria la insercion a la base de datos
+                    i++;
+                }
+                System.IO.File.Delete(@Ruta);
+                Response.Write("Se Agregaron las Zonas Con Exito");
+            }
+
+        }
 
     }
 }

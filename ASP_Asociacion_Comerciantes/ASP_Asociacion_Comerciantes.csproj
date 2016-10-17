@@ -68,34 +68,26 @@
     <Content Include="asocomer.com\css\zona.css" />
     <Content Include="asocomer.com\imagenes\fondologin.png" />
     <Content Include="asocomer.com\imagenes\fondoregister.png" />
+    <Content Include="asocomer.com\imagenes\fondosolicitud.jpg" />
     <Content Include="asocomer.com\index.aspx" />
     <Content Include="asocomer.com\css\fonts\icomoon.svg" />
     <Content Include="asocomer.com\login.aspx" />
     <Content Include="asocomer.com\logout.aspx" />
     <Content Include="asocomer.com\register.aspx" />
+    <Content Include="asocomer.com\solicitudcomercio.aspx" />
+    <Content Include="asocomer.com\usuario\editarperfil.aspx" />
+    <Content Include="asocomer.com\usuario\historial.aspx" />
     <Content Include="asocomer.com\usuario\perfil.aspx" />
-    <Content Include="fallidobueno\css\login_register.css" />
-    <Content Include="fallidobueno\css\perfil.css" />
     <Content Include="asocomer.com\css\fonts.css" />
     <Content Include="asocomer.com\imagenes\icono.ico" />
     <Content Include="asocomer.com\css\normalize.css" />
-    <Content Include="fallidobueno\css\main.css" />
     <Content Include="asocomer.com\imagenes\imagen1.png" />
     <Content Include="asocomer.com\imagenes\imagen2.png" />
     <Content Include="asocomer.com\imagenes\logotipo.png" />
     <Content Include="asocomer.com\imagenes\pagination.png" />
-    <Content Include="fallidobueno\index.aspx" />
-    <Content Include="fallidobueno\css\index.css" />
     <Content Include="asocomer.com\js\jquery-1.9.1.min.js" />
     <Content Include="asocomer.com\js\jquery.slides.js" />
     <Content Include="asocomer.com\js\jquery.slides.min.js" />
-    <Content Include="fallidobueno\login.aspx" />
-    <Content Include="fallidobueno\logout.aspx" />
-    <Content Include="fallidobueno\register.aspx" />
-    <Content Include="fallidobueno\shopping-car.aspx" />
-    <Content Include="fallidobueno\editarperfil.aspx" />
-    <Content Include="fallidobueno\perfil.aspx" />
-    <Content Include="fallidobueno\userhistorial.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +150,27 @@
     <Compile Include="asocomer.com\register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="asocomer.com\solicitudcomercio.aspx.cs">
+      <DependentUpon>solicitudcomercio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asocomer.com\solicitudcomercio.aspx.designer.cs">
+      <DependentUpon>solicitudcomercio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asocomer.com\usuario\editarperfil.aspx.cs">
+      <DependentUpon>editarperfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asocomer.com\usuario\editarperfil.aspx.designer.cs">
+      <DependentUpon>editarperfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asocomer.com\usuario\historial.aspx.cs">
+      <DependentUpon>historial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asocomer.com\usuario\historial.aspx.designer.cs">
+      <DependentUpon>historial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="asocomer.com\usuario\perfil.aspx.cs">
       <DependentUpon>perfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,75 +185,9 @@
     <Compile Include="asocomer.com\usuario\usuario.Master.designer.cs">
       <DependentUpon>usuario.Master</DependentUpon>
     </Compile>
-    <Compile Include="fallidobueno\AsociacionComerciantes.Master.cs">
-      <DependentUpon>AsociacionComerciantes.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\AsociacionComerciantes.Master.designer.cs">
-      <DependentUpon>AsociacionComerciantes.Master</DependentUpon>
-    </Compile>
-    <Compile Include="fallidobueno\codigo\Historial.cs" />
-    <Compile Include="fallidobueno\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="fallidobueno\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="fallidobueno\logout.aspx.cs">
-      <DependentUpon>logout.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\logout.aspx.designer.cs">
-      <DependentUpon>logout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="fallidobueno\register.aspx.cs">
-      <DependentUpon>register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\register.aspx.designer.cs">
-      <DependentUpon>register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="fallidobueno\codigo\Usuario.cs" />
-    <Compile Include="fallidobueno\shopping-car.aspx.cs">
-      <DependentUpon>shopping-car.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\shopping-car.aspx.designer.cs">
-      <DependentUpon>shopping-car.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="fallidobueno\editarperfil.aspx.cs">
-      <DependentUpon>editarperfil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\editarperfil.aspx.designer.cs">
-      <DependentUpon>editarperfil.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="fallidobueno\perfil.aspx.cs">
-      <DependentUpon>perfil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\perfil.aspx.designer.cs">
-      <DependentUpon>perfil.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="fallidobueno\userhistorial.aspx.cs">
-      <DependentUpon>userhistorial.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="fallidobueno\userhistorial.aspx.designer.cs">
-      <DependentUpon>userhistorial.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fallidobueno\AsociacionComerciantes.Master" />
     <Content Include="asocomer.com\css\fonts\icomoon.eot" />
     <Content Include="asocomer.com\css\fonts\icomoon.ttf" />
     <Content Include="asocomer.com\css\fonts\icomoon.woff" />
@@ -255,6 +202,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="asocomer.com\administracion\usuario\" />
     <Folder Include="asocomer.com\administracion\zona\temp\" />
   </ItemGroup>
   <PropertyGroup>

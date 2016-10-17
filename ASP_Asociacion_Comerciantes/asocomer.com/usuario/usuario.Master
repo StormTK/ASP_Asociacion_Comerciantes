@@ -14,6 +14,10 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <%if (Session["Usuario"] == null)
+        {
+            Response.Redirect("../login.aspx?msg=3", false);
+        }%>
     <form id="usuarioasocomer" runat="server">
         <header>
             <div class="cabecera">
@@ -29,7 +33,7 @@
                 <div id="iniciarsesion">
                     <%
 
-                        String MenuCliente = "<a href=\"register.aspx\"><span class=\"icon-register\">Registrarse</span></a><span>|</span><a href=\"login.aspx\"><span class=\"icon-enter\">Iniciar Sesión</span></a>";
+                        String MenuCliente = "<a href=\"..\\register.aspx\"><span class=\"icon-register\">Registrarse</span></a><span>|</span><a href=\"login.aspx\"><span class=\"icon-enter\">Iniciar Sesión</span></a>";
 
                         if (Session["Usuario"] == null)
                         {
@@ -38,7 +42,7 @@
                         else
                         {
                             String[] usuario = (String[])Session["Usuario"];
-                            String Socio = "<a href=\"logout.aspx\"><span class=\"icon-exit\">Cerrar Sesión</span></a> </span></a><span>|</span><a href=\"usuario\\perfil.aspx?id=" + usuario[0] + " \"><span class=\"icon-usuario\">" + usuario[2] + " " + usuario[3] + "</span></a>";
+                            String Socio = "<a href=\"..\\logout.aspx\"><span class=\"icon-exit\">Cerrar Sesión</span></a> </span></a><span>|</span><a href=\"..\\usuario\\perfil.aspx?id=" + usuario[0] + " \"><span class=\"icon-usuario\">" + usuario[2] + " " + usuario[3] + "</span></a>";
                             Response.Write(Socio);
                         }
                     %>
@@ -54,21 +58,56 @@
             </div>
         </header>
         <div class="contenido_global">
-            <div class="panel_perfil">
+            
                 <%
-                    if (Session["Usuario"] == null)
+                    if (Request.QueryString.Get("id") != null)
                     {
-                        
+                        int idUsuario = Convert.ToInt32(Request.QueryString.Get("id"));
+                        Response.Write(getPerfil(idUsuario));
                     }
                     else
                     {
-                        String[] usuario = (String[])Session["Usuario"];
-                        int idUsuario = Convert.ToInt32(usuario[0]);
-                        Response.Write(getPerfil(idUsuario));
+                        if (Session["Usuario"] != null)
+                        {
+                            String[] usuario = (String[])Session["Usuario"];
+                            int idPerfil = Convert.ToInt32(usuario[0]);
+                            Response.Write(getPerfil(idPerfil));
+                        }
                     }
                 %>
-            </div>
+            
             <div class="info_perfil">
+                <div class="botones">
+
+                    <% 
+                        if (Session["Usuario"] == null)
+                        {
+                            Response.Redirect("../login.aspx?msg=3", false);
+                        }
+                        else
+                        {
+                            if (Request.QueryString.Get("id") != null)
+                            {
+
+                                String[] usuario = (String[])Session["Usuario"];
+                                int idUsuarioVisitante = Convert.ToInt32(usuario[0]);
+                                int idPerfil = Convert.ToInt32(Request.QueryString.Get("id"));
+                                Response.Write(" <a class=\"botonUsuario\" href=\"perfil.aspx?id=" + idPerfil + "\" >Perfil</a>");
+                                if (idPerfil == idUsuarioVisitante)
+                                {
+                                    Response.Write("<a class=\"botonUsuario\" href=\"editarperfil.aspx\">Editar Perfil</a> <a class=\"botonUsuario\" href=\"historial.aspx\" >Mostrar Historial</a>");
+                                }
+                            }
+                            else
+                            {
+                                String[] usuario = (String[])Session["Usuario"];
+                                int idPerfil = Convert.ToInt32(usuario[0]);
+                                Response.Write(" <a class=\"botonUsuario\" href=\"perfil.aspx?id=" + idPerfil + "\" >Perfil</a><a class=\"botonUsuario\" href=\"editarperfil.aspx\" >Editar Perfil</a> <a class=\"botonUsuario\" href=\"historial.aspx\" >Mostrar Historial</a>");
+                            }
+                        }
+
+                    %>
+                </div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>

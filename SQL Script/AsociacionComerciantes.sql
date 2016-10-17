@@ -10,7 +10,7 @@ CREATE TABLE Usuario(
 	noCuenta	NVARCHAR(12) NULL,
 	noTarjeta	NVARCHAR(12) NULL,
 	estado		INTEGER NOT NULL
-);
+)
 
 CREATE TABLE Historial(
 	idHistorial	INTEGER NOT NULL,
@@ -36,8 +36,7 @@ CREATE TABLE ZonaVecina(
 	CONSTRAINT fk_zonavec FOREIGN KEY(idZonaV) REFERENCES Zona(idZona)
 )
 
-CREATE TABLE Comercio
-  (
+CREATE TABLE SolicitudComercio(
     idComercio	INTEGER NOT NULL IDENTITY PRIMARY KEY,
     nombre      VARCHAR (60) NOT NULL ,
     siglas		VARCHAR (10) NOT NULL ,
@@ -47,7 +46,20 @@ CREATE TABLE Comercio
     telefono    VARCHAR (8) ,
     estado      INTEGER NOT NULL ,
     idUsuario	INTEGER NOT NULL ,
-    idZona      INTEGER NULL
+  );
+
+CREATE TABLE Comercio(
+    idComercio	INTEGER NOT NULL IDENTITY PRIMARY KEY,
+    nombre      VARCHAR (60) NOT NULL ,
+    siglas		VARCHAR (10) NOT NULL ,
+    direccion   VARCHAR (30) NOT NULL ,
+    email       VARCHAR (30) NOT NULL ,
+    fax         VARCHAR (30) ,
+    telefono    VARCHAR (8) ,
+    estado      INTEGER NOT NULL ,
+    idUsuario	INTEGER NOT NULL ,
+    idZona      INTEGER NULL,
+	CONSTRAINT fk_comercioZona FOREIGN KEY(idZona) REFERENCES Zona(idZona)
   );
 
 INSERT INTO Usuario(correo, contraseña, nombre, apellido, sexo, rol, estado) Values('ADMIN@ASOCOMER.COM','Admin1234567','Administrador','Asocomer',1, 1, 1)

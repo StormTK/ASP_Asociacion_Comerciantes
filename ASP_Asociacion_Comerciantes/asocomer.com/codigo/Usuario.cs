@@ -11,6 +11,28 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
         SqlConnection Conexion = new SqlConnection("Data Source=STORMTK-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
         //SqlConnection Conexion = new SqlConnection("Data Source=FELIPEKD-PC;Initial Catalog=ASOCOMER;Integrated Security=True");
 
+        public String ApellidoUsuario(int idUsuario)
+        {
+            String stg_sql = "SELECT apellido FROM Usuario WHERE idUsuario = @idUsuario";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                SqlDataReader resultado = cmd.ExecuteReader();
+                resultado.Read();
+                String nombre = resultado["apellido"].ToString();
+                Conexion.Close();
+                return nombre;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return "";
+        }
+
         public Boolean AutenticarUsuario(String Email, String Contraseña)
         {
             String stg_sql = "SELECT COUNT(*)FROM Usuario WHERE correo = @Email AND contraseña = @Password";
@@ -35,7 +57,51 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
             return false;
         }
 
-        public int BuscaridUsuario(String Email)
+        public String ContraseñaUsuario(int idUsuario)
+        {
+            String stg_sql = "SELECT contraseña FROM Usuario WHERE idUsuario = @idUsuario";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                SqlDataReader resultado = cmd.ExecuteReader();
+                resultado.Read();
+                String nombre = resultado["contraseña"].ToString();
+                Conexion.Close();
+                return nombre;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return "";
+        }
+
+        public String EmailUsuario(int idUsuario)
+        {
+            String stg_sql = "SELECT correo FROM Usuario WHERE idUsuario = @idUsuario";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                SqlDataReader resultado = cmd.ExecuteReader();
+                resultado.Read();
+                String nombre = resultado["correo"].ToString();
+                Conexion.Close();
+                return nombre;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return "";
+        }
+
+        public int idUsuario(String Email)
         {
             String stg_sql = "SELECT idUsuario FROM Usuario WHERE correo = @Email";
             try
@@ -76,11 +142,11 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
                 String HTML_Perfil = "";
                 if (sexo.Equals("1") || sexo.Equals("true") || sexo.Equals("True"))
                 {
-                    HTML_Perfil += "<p class=\"icon-hombre\"></p>";
+                    HTML_Perfil += "<div class=\"panel_perfil\"><p class=\"icon-hombre fotoperfil\"></p>";
                 }
                 if (sexo.Equals("0") || sexo.Equals("false") || sexo.Equals("False"))
                 {
-                    HTML_Perfil += "<p class=\"icon-mujer\"></p>";
+                    HTML_Perfil += "<div class=\"panel_perfil\"><p class=\"icon-mujer fotoperfil\"></p>";
                 }
                 HTML_Perfil += " <h2 class=\"nombre\">" + nombre + " " + apellido + "</h2>";
                 switch (rol)
@@ -104,7 +170,7 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
                         HTML_Perfil += "<h3 class=\"nombre\">Socio</h3>";
                         break;
                 }
-
+                HTML_Perfil += "</div>";
                 return HTML_Perfil;
             }
             catch (Exception DetalleError)
@@ -112,7 +178,29 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
                 String MensajeError = "Insert Error:";
                 MensajeError += DetalleError.Message;
             }
-            return "Error 404 - No se encontro Perfil";
+            return "<p class=\"error\" > :C Error 404 <br /> Usuario no Encontrado</p>";
+        }
+
+        public String NombreUsuario(int idUsuario)
+        {
+            String stg_sql = "SELECT nombre FROM Usuario WHERE idUsuario = @idUsuario";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                SqlDataReader resultado = cmd.ExecuteReader();
+                resultado.Read();
+                String nombre = resultado["nombre"].ToString();
+                Conexion.Close();
+                return nombre;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return "";
         }
 
         public String[] SesionUsuario(String Email)
@@ -143,6 +231,36 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
             return null;
         }
 
+        public String SexoUsuario(int idUsuario)
+        {
+            String stg_sql = "SELECT sexo FROM Usuario WHERE idUsuario = @idUsuario";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                SqlDataReader resultado = cmd.ExecuteReader();
+                resultado.Read();
+                String sexo = resultado["sexo"].ToString();
+                Conexion.Close();
+                if (sexo.Equals("1") || sexo.Equals("true") || sexo.Equals("True"))
+                {
+                    sexo = "Hombre";
+                }
+                if (sexo.Equals("0") || sexo.Equals("false") || sexo.Equals("False"))
+                {
+                    sexo = "Mujer";
+                }
+                return sexo;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return "";
+        }
+
         public Boolean RegistrarUsuario(String Email, String Password, String Nombre, String Apellido, Boolean Sexo)
         {
             String stg_sql = "INSERT INTO Usuario(correo, contraseña, nombre, apellido, sexo, rol, estado) VALUES (@Email, @Password, @Name, @Apellido, @Sexo, 6 , 1)";
@@ -165,6 +283,28 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com.codigo
                 MensajeError += DetalleError.Message;
             }
             return false;
+        }
+
+        public String TelefonoUsuario(int idUsuario)
+        {
+            String stg_sql = "SELECT telefono FROM Usuario WHERE idUsuario = @idUsuario";
+            try
+            {
+                Conexion.Open();
+                SqlCommand cmd = new SqlCommand(stg_sql, Conexion);
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                SqlDataReader resultado = cmd.ExecuteReader();
+                resultado.Read();
+                String telefono = resultado["telefono"].ToString();
+                Conexion.Close();
+                return telefono;
+            }
+            catch (Exception DetalleError)
+            {
+                String MensajeError = "Insert Error:";
+                MensajeError += DetalleError.Message;
+            }
+            return "";
         }
 
         public Boolean VerificarEmail(String Email)

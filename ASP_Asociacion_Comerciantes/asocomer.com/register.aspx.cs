@@ -41,7 +41,7 @@ namespace ASP_Asociacion_Comerciantes.asocomer.com
                             Boolean blnSexo = Convert.ToBoolean(OpcionSexo.SelectedValue);
                             if (RegistrarUsuario.RegistrarUsuario(Email, Password, Nombre, Apellido, blnSexo) == true)
                             {
-                                int idUsuario = RegistrarUsuario.BuscaridUsuario(Email);
+                                int idUsuario = RegistrarUsuario.idUsuario(Email);
                                 if (idUsuario >= 1)
                                 {
                                     if (EventoRegistro.RegistrarHistorial(1, idUsuario, "Se Registro en la Aplicacion Web.") == true)
